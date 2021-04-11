@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+const App = () => {
+  const openSection = () => {
+    console.log('open this section')
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <h1>Conconart</h1>
+      <div className='linkContainer'>
+        <div className='mainLink devLink' onClick={openSection}>
+          Software Engineer
+          <section className='linkSection'>
+            <p>Something goes here</p>
+          </section>
+        </div>
+        <div className='mainLink musicianLink' onClick={openSection}>
+          Musician
+          <section className='linkSection'>
+            <p>Something goes here</p>
+          </section>
+        </div>
+        <div className='mainLink vocalLink' onClick={openSection}>
+          Vocal Coach
+          <section className='linkSection'>
+            <p>Something goes here</p>
+          </section>
+        </div>
+        <div className='mainLink sewistLink' onClick={openSection}>
+          Sewist
+          <section className='linkSection'>
+            <p>Something goes here</p>
+          </section>
+        </div>
+      </div>
+      <section>
+        <p>Connie Hong is cool.</p>
+      </section>
+    </main>
   );
 }
 
