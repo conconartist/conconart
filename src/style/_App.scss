@@ -25,10 +25,20 @@ button {
 
 .buttonOne {
   background-color: $fifth-accent-color;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.3em;
+  width: 100vw;
 }
 
 .buttonTwo {
   background-color: $sixth-accent-color;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.3em;
+  width: 100vw;
 }
 
 .devLink {
@@ -65,12 +75,15 @@ button {
   background-color: $fourth-accent-color;
 }
 
-.summary {
+.summary, .summaryContainer {
+  align-items: center;
   background-color: white;
   border-radius: 6px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   margin: 1.5%;
+  padding: 1em;
   width: 50%;
 }
 .vocalLink {
