@@ -4,19 +4,24 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.App {
-  text-align: center;
-}
+// .App {
+//   text-align: center;
+// }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+// .App-logo {
+//   height: 40vmin;
+//   pointer-events: none;
+// }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+
+.aboutMe {
+  display: flex;
+  justify-content: center;
 }
 
 button {
@@ -85,6 +90,11 @@ button {
   margin: 1.5%;
   padding: 1em;
   width: 50%;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 3);
 }
 .vocalLink {
   background-color: $third-accent-color;
