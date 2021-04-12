@@ -35,9 +35,15 @@ button {
   background-color: $first-accent-color;
 }
 
+.linkContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .linkSection {
   align-items: center;
-  background-color: white;
+  background-color: $primary-background-color;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,6 +63,15 @@ button {
 
 .sewistLink {
   background-color: $fourth-accent-color;
+}
+
+.summary {
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  margin: 1.5%;
+  width: 50%;
 }
 .vocalLink {
   background-color: $third-accent-color;
