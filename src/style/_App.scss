@@ -19,15 +19,16 @@ main {
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  border: none;
+}
+
+.buttonOne {
+  background-color: $fifth-accent-color;
+}
+
+.buttonTwo {
+  background-color: $sixth-accent-color;
 }
 
 .devLink {
@@ -35,11 +36,19 @@ main {
 }
 
 .linkSection {
+  align-items: center;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
 }
 .mainLink {
+  align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  width: 100vw;
 }
 
 .musicianLink {
