@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Route, Link } from 'react-router-dom';
 
 const App = () => {
   const [openDevSection, setOpenDevSection] = useState(false);
@@ -41,50 +42,58 @@ const App = () => {
   return (
     <main>
       <h1>Conconart</h1>
-      <div className='linkContainer'>
-        <div className='mainLink devLink' onClick={toggleDevSection}>
-          <h2>Software Engineer</h2>
-          {openDevSection &&
-            <section className='linkSection'>
-              <p>Something goes here</p>
-              <button className='buttonOne'>Portfolio</button>
-            </section>
-          }
-        </div>
-        <div className='mainLink musicianLink' onClick={toggleMusicSection}>
-          <h2>Musician</h2>
-          {openMusicSection && 
-            <section className='linkSection'>
-              <p>Something goes here</p>
-              <button className='buttonOne'>Fair Elle</button>
-              <button className='buttonTwo'>Ivory Circle</button>
-            </section>
-          }
-        </div>
-        <div className='mainLink vocalLink' onClick={toggleVocalSection}>
-          <h2>Vocal Coach</h2>
-          {openVocalSection && 
-            <section className='linkSection'>
-              <p>Something goes here</p>
-              <button className='buttonOne'>Voice Lessons</button>
-              <button className='buttonTwo'>Studio Coaching</button>
-            </section>
-          }
-        </div>
-        <div className='mainLink sewistLink' onClick={toggleSewSection}>
-          <h2>Sewist</h2>
-          {openSewSection && 
-            <section className='linkSection'>
-              <p>Something goes here</p>
-              <button className='buttonOne'>Refashions</button>
-              <button className='buttonTwo'>MeMades</button>
-            </section>
-          }
-        </div>
-      </div>
-      <section>
-        <p>Connie Hong is cool.</p>
-      </section>
+      <Route
+        exact
+        path='/'
+        render={ () => {
+          return (
+            <div className='linkContainer'>
+              <div className='mainLink devLink' onClick={toggleDevSection}>
+                <h2>Software Engineer</h2>
+                {openDevSection &&
+                  <section className='linkSection'>
+                    <p>Something goes here</p>
+                    <button className='buttonOne'>Portfolio</button>
+                  </section>
+                }
+              </div>
+              <div className='mainLink musicianLink' onClick={toggleMusicSection}>
+                <h2>Musician</h2>
+                {openMusicSection && 
+                  <section className='linkSection'>
+                    <p>Something goes here</p>
+                    <button className='buttonOne'>Fair Elle</button>
+                    <button className='buttonTwo'>Ivory Circle</button>
+                  </section>
+                }
+              </div>
+              <div className='mainLink vocalLink' onClick={toggleVocalSection}>
+                <h2>Vocal Coach</h2>
+                {openVocalSection && 
+                  <section className='linkSection'>
+                    <p>Something goes here</p>
+                    <button className='buttonOne'>Voice Lessons</button>
+                    <button className='buttonTwo'>Studio Coaching</button>
+                  </section>
+                }
+              </div>
+              <div className='mainLink sewistLink' onClick={toggleSewSection}>
+                <h2>Sewist</h2>
+                {openSewSection && 
+                  <section className='linkSection'>
+                    <p>Something goes here</p>
+                    <button className='buttonOne'>Refashions</button>
+                    <button className='buttonTwo'>MeMades</button>
+                  </section>
+                }
+              </div>
+              <section className='summary'>
+                <p>Connie Hong is cool.</p>
+              </section>
+            </div>
+          )
+        }}
+      />
     </main>
   );
 }
