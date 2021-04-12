@@ -6,6 +6,7 @@ const App = () => {
   const [openMusicSection, setOpenMusicSection] = useState(false);
   const [openVocalSection, setOpenVocalSection] = useState(false);
   const [openMakerSection, setOpenMakerSection] = useState(false);
+  const [openAboutMeSection, setOpenAboutMeSection] = useState(false)
 
   const toggleDevSection = () => {
     if(openDevSection === false){
@@ -39,6 +40,13 @@ const App = () => {
     }
   }
 
+  const toggleAboutMeSection = () => {
+    if(openAboutMeSection === false) {
+      setOpenAboutMeSection(true)
+    } else {
+      setOpenAboutMeSection(false)
+    }
+  }
   return (
     <main>
       <h1>Conconart</h1>
@@ -52,23 +60,35 @@ const App = () => {
                 <h2>Software Engineer</h2>
                 {openDevSection &&
                   <section className='linkSection'>
+                    <div className='summaryContainer'>
                       <p>
-                      As a software engineer, Connie is a graduate from Turing School of Software and Design with a certification in Frontend Engineering.
+                      As a software engineer, Connie is a graduate from Turing School of Software and Design with a certification in Front-End Engineering.
                       </p>
                       <ul>
                         <li>JavaScript</li>
                         <li>HTML</li>
-                        <li>CSS/SCSS</li>
-                        <li>React</li>
-                        <li>TDD</li>
-                        <li>UI/UX</li>
+                        <li>CSS/ SCSS (Sass)</li>
+                        <li>React (Redux, React Hooks, React Router)</li>
+                        <li>TDD (Mocha, Chai, Cypress)</li>
+                        <li>UI/UX (User Experience/ User Interface Design)</li>
                         <li>Wireframing</li>
+                        <li>Project Planning (GitHub Projects, Kanban)</li>
                         <li>Figma</li>
+                        <li>Twitter</li>
+                        <li>Remote Learning/ Working</li>
                       </ul>
-                      <div className='summaryContainer'>
-                      <p>
-                        Experienced musician, singer-songwriter, and creative thinker. I strive to find beauty and artistic expression in everything I do, so programming is no exception. Recent world and life events afforded me the opportunity to begin a career in software development to explore my interests and curiosities, while helping my community (and beyond) in new ways I hadn't yet explored through software engineering and frontend development. Past endeavors in design, crafts, and sewing have led to a passion for sustainable fashion and minimal waste-living (especially in the realm of slow-fashion). I strive to cultivate a life of creativity and responsible-living where I can help better the world working with a company that shares my values in improving the world we live in, while affording myself with a work-life balance where I can still pursue a beautiful life of music and art. 
-                      </p>
+                      <h3>What I'm currently learning:</h3>
+                      <ul>
+                        <li>d3</li>
+                        <li>GraphQL</li>
+                        <li>Postgres</li>
+                      </ul>
+                      <h3>What I'm currently building:</h3>
+                      <ul>
+                        <li>Mod 4 Capstone project: Bookworm</li>
+                      </ul>
+                      <h3>Available for hire?</h3>
+                      <p>YES.</p>
                     </div>
                     <Link to='/portfolio'>
                       <p className='buttonOne'>Portfolio</p>
@@ -124,10 +144,18 @@ const App = () => {
                   </section>
                 }
               </div>
+              <div className='aboutMe' onClick={toggleAboutMeSection}>
+                <div className='summaryContainer'>
+                  <p>Connie Hong is a software developer, vocalist, songwriter, teacher, and an overall creative person.  She is the lead singer and songwriter for Ivory Circle and Fair Elle, and vocal teacher/ coach in Denver, Colorado.</p>
+                </div>
+              </div>
               <section className='summary'>
-                <p>Connie Hong is cool. Connie Hong is a software developer, vocalist, songwriter, teacher, and an overall creative person.  She is the lead singer and songwriter for Ivory Circle and Fair Elle, and vocal teacher/ coach in Denver, Colorado.</p>
+                <h2>I'm Connie Hong (she/her).</h2> 
+                <p>I'm an experienced musician, singer-songwriter, lifelong learner, and creative thinker. I strive to find beauty and artistic expression in everything I do, so programming is no exception.</p>
+                <p>Recent world and life events afforded me the opportunity to begin a career in software development to explore my interests and curiosities, while helping my community (and beyond) in new ways I hadn't yet explored through software engineering and frontend development. Past endeavors in design, crafts, and sewing have led to a passion for sustainable fashion and minimal waste-living (especially in the realm of slow-fashion). I strive to cultivate a life of creativity and responsible-living where I can help better the world working with a company that shares my values in improving the world we live in, while affording myself with a work-life balance where I can still pursue a beautiful life of music and art.</p>
                 <svg>Instagram</svg>
                 <svg>Twitter</svg>
+                <svg>Github</svg>
                 <p>email me</p>
               </section>
             </div>
