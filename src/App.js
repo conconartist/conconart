@@ -58,8 +58,8 @@ const App = () => {
         render={ () => {
           return (
             <div className='linkContainer'>
-              <div className='mainLink devLink' onClick={toggleDevSection}>
-                <h2>Software Engineer</h2>
+              <div className='devLink' onClick={toggleDevSection}>
+                <h2 className='mainLink'>Software Engineer</h2>
                 {openDevSection &&
                   <section className='linkSection'>
                     <div className='summaryContainer'>
@@ -98,8 +98,8 @@ const App = () => {
                   </section>
                 }
               </div>
-              <div className='mainLink musicianLink' onClick={toggleMusicSection}>
-                <h2>Musician</h2>
+              <div className='musicianLink' onClick={toggleMusicSection}>
+                <h2 className='mainLink'>Musician</h2>
                 {openMusicSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
@@ -114,8 +114,8 @@ const App = () => {
                   </section>
                 }
               </div>
-              <div className='mainLink vocalLink' onClick={toggleVocalSection}>
-                <h2>Vocal Coach</h2>
+              <div className='vocalLink' onClick={toggleVocalSection}>
+                <h2 className='mainLink'>Vocal Coach</h2>
                 {openVocalSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
@@ -130,8 +130,8 @@ const App = () => {
                   </section>
                 }
               </div>
-              <div className='mainLink sewistLink' onClick={toggleMakerSection}>
-                <h2>Maker</h2>
+              <div className='sewistLink' onClick={toggleMakerSection}>
+                <h2 className='mainLink'>Maker</h2>
                 {openMakerSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
@@ -147,25 +147,29 @@ const App = () => {
                 }
               </div>
               <div className='aboutMe' onClick={toggleAboutMeSection}>
-                <Headshot />
-                <div className='summaryContainer'>
-                  <p>Connie Hong is a software developer, vocalist, songwriter, teacher, a lifelong learner, and a creative thinker.  She is the lead singer and songwriter for Ivory Circle and Fair Elle, and vocal teacher/ coach in Denver, Colorado.</p>
-                </div>
-              </div>
-              <section className='summary'>
-                <h2>I'm Connie Hong (she/her).</h2> 
-                <img
-                  className='realHeadshotImg'
-                  src={headshotReal}
-                  alt='photo portrait of Connie Hong sitting in a chair and smiling'>
-                </img>
-                <p>I'm an experienced musician, singer-songwriter, lifelong learner, and creative thinker. I strive to find beauty and artistic expression in everything I do, so programming is no exception.</p>
-                <p>Recent world and life events afforded me the opportunity to begin a career in software development to explore my interests and curiosities, while helping my community (and beyond) in new ways I hadn't yet explored through software engineering and frontend development. Past endeavors in design, crafts, and sewing have led to a passion for sustainable fashion and minimal waste-living (especially in the realm of slow-fashion). I strive to cultivate a life of creativity and responsible-living where I can help better the world working with a company that shares my values in improving the world we live in, while affording myself with a work-life balance where I can still pursue a beautiful life of music and art.</p>
-                <svg>Instagram</svg>
-                <svg>Twitter</svg>
-                <svg>Github</svg>
-                <p>email me</p>
+                {!openAboutMeSection &&
+                  <div>
+                    <Headshot />
+                    <p className='summaryContainer'>Connie Hong is a software developer, vocalist, songwriter, teacher, a lifelong learner, and a creative thinker.  She is the lead singer and songwriter for Ivory Circle and Fair Elle, and vocal teacher/ coach in Denver, Colorado.</p>
+                  </div>
+                }
+                {openAboutMeSection && 
+                  <section className='summary'>
+                  <h2>I'm Connie Hong (she/her).</h2> 
+                  <img
+                    className='realHeadshotImg'
+                    src={headshotReal}
+                    alt='photo portrait of Connie Hong sitting in a chair and smiling'>
+                  </img>
+                  <p>I'm an experienced musician, singer-songwriter, lifelong learner, and creative thinker. I strive to find beauty and artistic expression in everything I do, so programming is no exception.</p>
+                  <p>Recent world and life events afforded me the opportunity to begin a career in software development to explore my interests and curiosities, while helping my community (and beyond) in new ways I hadn't yet explored through software engineering and frontend development. Past endeavors in design, crafts, and sewing have led to a passion for sustainable fashion and minimal waste-living (especially in the realm of slow-fashion). I strive to cultivate a life of creativity and responsible-living where I can help better the world working with a company that shares my values in improving the world we live in, while affording myself with a work-life balance where I can still pursue a beautiful life of music and art.</p>
+                  <svg>Instagram</svg>
+                  <svg>Twitter</svg>
+                  <svg>Github</svg>
+                  <p>email me</p>
               </section>
+        }
+              </div>
             </div>
           )
         }}
