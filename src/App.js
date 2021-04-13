@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import { Route, Link } from 'react-router-dom';
+import Headshot from './Headshot.js';
+import headshotReal from './headshotReal.jpg';
 
 const App = () => {
   const [openDevSection, setOpenDevSection] = useState(false);
@@ -145,12 +147,16 @@ const App = () => {
                 }
               </div>
               <div className='aboutMe' onClick={toggleAboutMeSection}>
+                <Headshot />
                 <div className='summaryContainer'>
                   <p>Connie Hong is a software developer, vocalist, songwriter, teacher, and an overall creative person.  She is the lead singer and songwriter for Ivory Circle and Fair Elle, and vocal teacher/ coach in Denver, Colorado.</p>
                 </div>
               </div>
               <section className='summary'>
                 <h2>I'm Connie Hong (she/her).</h2> 
+                <img
+                  className='realHeadshotImg'
+                  src={headshotReal}></img>
                 <p>I'm an experienced musician, singer-songwriter, lifelong learner, and creative thinker. I strive to find beauty and artistic expression in everything I do, so programming is no exception.</p>
                 <p>Recent world and life events afforded me the opportunity to begin a career in software development to explore my interests and curiosities, while helping my community (and beyond) in new ways I hadn't yet explored through software engineering and frontend development. Past endeavors in design, crafts, and sewing have led to a passion for sustainable fashion and minimal waste-living (especially in the realm of slow-fashion). I strive to cultivate a life of creativity and responsible-living where I can help better the world working with a company that shares my values in improving the world we live in, while affording myself with a work-life balance where I can still pursue a beautiful life of music and art.</p>
                 <svg>Instagram</svg>
