@@ -72,6 +72,10 @@ button {
   flex-direction: column;
   justify-content: center;
   width: 100vw;
+  &:hover {
+    color: white;
+    height: 2em;
+  }
 }
 
 .musicianLink {
