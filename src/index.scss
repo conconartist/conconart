@@ -34,3 +34,14 @@ body {
   h3 {
     margin: 0.1em;
   }
+
+  svg {
+    margin-top: 1em;
+    width: 500px;
+    height: 500px;
+    &:hover {
+      background-color: white;
+      border-radius: 6px;
+
+    }
+  }
