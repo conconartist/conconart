@@ -78,6 +78,7 @@ const App = () => {
                         <li>Figma</li>
                         <li>Twitter</li>
                         <li>Remote Learning/ Working</li>
+                        <li>Responsive Web Design</li>
                       </ul>
                       <h3>What I'm currently learning:</h3>
                       <ul>
@@ -148,10 +149,10 @@ const App = () => {
               </div>
               <div className='aboutMe' onClick={toggleAboutMeSection}>
                 {!openAboutMeSection &&
-                  <div>
+                  <section className='displaySummary'>
                     <Headshot />
                     <p className='summaryContainer'>Connie Hong is a software developer, vocalist, songwriter, teacher, a lifelong learner, and a creative thinker.  She is the lead singer and songwriter for Ivory Circle and Fair Elle, and vocal teacher/ coach in Denver, Colorado.</p>
-                  </div>
+                  </section>
                 }
                 {openAboutMeSection && 
                   <section className='summary'>
