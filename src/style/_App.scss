@@ -4,20 +4,7 @@ main {
   flex-direction: column;
   align-items: center;
 }
-// .App {
-//   text-align: center;
-// }
 
-// .App-logo {
-//   height: 40vmin;
-//   pointer-events: none;
-// }
-
-// @media (prefers-reduced-motion: no-preference) {
-//   .App-logo {
-//     animation: App-logo-spin infinite 20s linear;
-//   }
-// }
 
 .aboutMe {
   align-items: center;
@@ -52,6 +39,12 @@ button {
   background-color: $first-accent-color;
 }
 
+.displaySummary {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .linkContainer {
   align-items: center;
   display: flex;
