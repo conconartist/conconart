@@ -2,6 +2,7 @@
 @import './style/extends';
 @import './style/reset';
 @import './style/variables';
+@import './Headshot/Headshot.scss';
 
 body {
     background-color: $primary-background-color;
@@ -20,23 +21,17 @@ body {
 
   h1 {
     font-size: 45px;
+    margin: 0.5em;
+    margin-bottom: 0.2em;
   }
 
   h2 {
     margin: 0.1em;
+    height: 1.5em;
   }
 
   h3 {
     margin: 0.1em;
   }
 
-  svg {
-    margin-top: 1em;
-    width: 500px;
-    height: 500px;
-    &:hover {
-      background-color: white;
-      border-radius: 6px;
-
-    }
-  }
+  
