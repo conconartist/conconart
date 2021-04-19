@@ -1,4 +1,11 @@
 @import './variables';
+
+a {
+  text-decoration: none;
+  &:visited {
+    color: red;
+  }
+}
 main {
   display: flex;
   flex-direction: column;
@@ -22,22 +29,41 @@ button {
   border: none;
 }
 
+.buttonContainer {
+  margin: 1em;
+}
+
 .buttonOne {
+  align-items: center;
   background-color: $fifth-accent-color;
+  border-radius: 8px;
+  color: black;
   display: flex;
+  font-size: 1.2em;
   justify-content: center;
-  margin: 0;
+  margin: 0.3em;
   padding: 0.3em;
-  width: 100vw;
+  width: 50vw;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
 }
 
 .buttonTwo {
   background-color: $sixth-accent-color;
+  border-radius: 8px;
+  color: black;
   display: flex;
+  font-size: 1.2em;
   justify-content: center;
-  margin: 0;
+  margin: 0.3em;
   padding: 0.3em;
-  width: 100vw;
+  width: 50vw;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
 }
 
 .devLink {
@@ -104,7 +130,7 @@ button {
   justify-content: center;
   margin: 3.2em;
   padding: 1em;
-  width: 50%;
+  width: 50vw;
 }
 
 .summaryHeader {
