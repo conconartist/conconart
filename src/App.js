@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import { Route, Link } from 'react-router-dom';
 import { Portfolio } from './Portfolio/Portfolio';
-import { FairElle } from './FairElle/FairElle'
+import { FairElle } from './FairElle/FairElle';
+import { IvoryCircle } from './IvoryCircle/IvoryCircle';
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
 
@@ -216,7 +217,7 @@ const App = () => {
         path='/ivorycircle'
         render={ () => {
           return (
-            <h2>Ivory Circle</h2>
+            <IvoryCircle />
           )
         }}
       />
