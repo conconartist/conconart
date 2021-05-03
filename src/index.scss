@@ -3,6 +3,13 @@
 @import './style/reset';
 @import './style/variables';
 @import './Headshot/Headshot.scss';
+@import './Components/FairElle/FairElle.scss';
+@import './Components/IvoryCircle/IvoryCircle.scss';
+@import './Components/Memades/Memades.scss';
+@import './Components/Portfolio/Portfolio.scss';
+@import './Components/Refashions/Refashions.scss';
+@import './Components/StudioCoaching/StudioCoaching.scss';
+@import './Components/VoiceLessons/VoiceLessons.scss';
 
 body {
     background-color: $primary-background-color;
