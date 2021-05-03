@@ -3,6 +3,7 @@ import { Route, Link } from 'react-router-dom';
 import { Portfolio } from './Portfolio/Portfolio';
 import { FairElle } from './FairElle/FairElle';
 import { IvoryCircle } from './IvoryCircle/IvoryCircle';
+import { VoiceLessons } from './VoiceLessons/VoiceLessons';
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
 
@@ -223,10 +224,10 @@ const App = () => {
       />
       <Route
         exact
-        path='/voicelessons'
+        path='/lessons'
         render={ () => {
           return (
-            <h2>Voice Lessons</h2>
+            <VoiceLessons />
           )
         }}
       />
