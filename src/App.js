@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Route, Link } from 'react-router-dom';
-import { Portfolio } from './Components/Portfolio/Portfolio.js';
+import { Portfolio } from './Portfolio/Portfolio';
+import { FairElle } from './FairElle/FairElle'
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
 
@@ -60,7 +61,7 @@ const App = () => {
           return (
             <div className='linkContainer'>
               <div className='devLink' onClick={toggleDevSection}>
-                <h2 className='mainLink'>Software Engineer</h2>
+                <h2 className='mainPageLink'>Software Engineer</h2>
                 {openDevSection &&
                   <section className='linkSection'>
                     <div className='summaryContainer'>
@@ -106,7 +107,7 @@ const App = () => {
                 }
               </div>
               <div className='musicianLink' onClick={toggleMusicSection}>
-                <h2 className='mainLink'>Musician</h2>
+                <h2 className='mainPageLink'>Musician</h2>
                 {openMusicSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
@@ -126,7 +127,7 @@ const App = () => {
                 }
               </div>
               <div className='vocalLink' onClick={toggleVocalSection}>
-                <h2 className='mainLink'>Vocal Coach</h2>
+                <h2 className='mainPageLink'>Vocal Coach</h2>
                 {openVocalSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
@@ -144,7 +145,7 @@ const App = () => {
                 }
               </div>
               <div className='sewistLink' onClick={toggleMakerSection}>
-                <h2 className='mainLink'>Maker</h2>
+                <h2 className='mainPageLink'>Maker</h2>
                 {openMakerSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
@@ -206,7 +207,7 @@ const App = () => {
         path='/fairelle'
         render={ () => {
           return (
-            <h2>Fair Elle</h2>
+            <FairElle />
           )
         }}
       />

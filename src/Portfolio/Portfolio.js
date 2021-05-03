@@ -31,11 +31,14 @@ export const Portfolio = () => {
 
     return (
         <>
-          <h2>BookWorm</h2>
-          <h2>Lyric Lava</h2>
-          <h2>FaceIt</h2>
-          <h2>Swanson Sayings</h2>
-          <h2>Rancid Tomatillos</h2>
+          <h2 className='linkedSectionTitle'>Portfolio</h2>
+          <section className='linkedSection'>
+            <h3>BookWorm</h3>
+            <h3>Lyric Lava</h3>
+            <h3>FaceIt</h3>
+            <h3>Swanson Sayings</h3>
+            <h3>Rancid Tomatillos</h3>
+          </section>
 
           <Link to='/'>
             <p className='buttonHome'>Home</p>

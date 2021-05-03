@@ -1,0 +1,6 @@
+
+.linkedSectionTitle {
+    @include mainLink;
+    background-color: $main-text-color;
+    color: white;
+}

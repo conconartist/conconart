@@ -1,15 +1,15 @@
 @import './style/App';
-@import './style/extends';
-@import './style/reset';
 @import './style/variables';
+@import './style/reset';
+@import './style/extends';
 @import './Headshot/Headshot.scss';
-@import './Components/FairElle/FairElle.scss';
-@import './Components/IvoryCircle/IvoryCircle.scss';
-@import './Components/Memades/Memades.scss';
-@import './Components/Portfolio/Portfolio.scss';
-@import './Components/Refashions/Refashions.scss';
-@import './Components/StudioCoaching/StudioCoaching.scss';
-@import './Components/VoiceLessons/VoiceLessons.scss';
+@import './FairElle/FairElle.scss';
+@import './IvoryCircle/IvoryCircle.scss';
+@import './Memades/Memades.scss';
+@import './Portfolio/Portfolio.scss';
+@import './Refashions/Refashions.scss';
+@import './StudioCoaching/StudioCoaching.scss';
+@import './VoiceLessons/VoiceLessons.scss';
 
 body {
     background-color: $primary-background-color;
@@ -57,3 +57,22 @@ h2 {
 h3 {
   margin: 0.1em;
 }
+
+.linkedSection {
+  align-items: center;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 
+       0 0 0 3px $first-accent-color,
+       0 0 0 6px $second-accent-color,
+       0 0 0 9px $third-accent-color,
+       0 0 0 12px $fourth-accent-color,
+       0 0 0 15px $fifth-accent-color,
+       0 0 0 18px $sixth-accent-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em;
+  width: 50vw;
+}
+

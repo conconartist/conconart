@@ -1,4 +1,5 @@
 @import './variables';
+@import './extends';
 
 a {
   text-decoration: none;
@@ -90,12 +91,9 @@ button {
   justify-content: center;
   width: 100vw;
 }
-.mainLink {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100vw;
+
+.mainPageLink {
+  @include mainLink;
   &:hover {
     color: white;
     height: 1.5em;
