@@ -4,6 +4,7 @@ import { Portfolio } from './Portfolio/Portfolio';
 import { FairElle } from './FairElle/FairElle';
 import { IvoryCircle } from './IvoryCircle/IvoryCircle';
 import { VoiceLessons } from './VoiceLessons/VoiceLessons';
+import { StudioCoaching } from './StudioCoaching/StudioCoaching';
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
 
@@ -233,10 +234,10 @@ const App = () => {
       />
       <Route
         exact
-        path='/studiocoaching'
+        path='/coaching'
         render={ () => {
           return (
-            <h2>Studio Coaching</h2>
+            <StudioCoaching />
           )
         }}
       />
