@@ -5,6 +5,8 @@ import { FairElle } from './FairElle/FairElle';
 import { IvoryCircle } from './IvoryCircle/IvoryCircle';
 import { VoiceLessons } from './VoiceLessons/VoiceLessons';
 import { StudioCoaching } from './StudioCoaching/StudioCoaching';
+import { Refashions } from './Refashions/Refashions';
+import { Memades } from './Memades/Memades';
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
 
@@ -246,7 +248,7 @@ const App = () => {
         path='/refashions'
         render={ () => {
           return (
-            <h2>Refashions</h2>
+            <Refashions />
           )
         }}
       />
@@ -255,7 +257,7 @@ const App = () => {
         path='/memades'
         render={ () => {
           return (
-            <h2>MeMades</h2>
+            <Memades />
           )
         }}
       />
