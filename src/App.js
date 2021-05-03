@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Route, Link } from 'react-router-dom';
+import { Portfolio } from './Components/Portfolio/Portfolio.js';
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
 
@@ -196,7 +197,7 @@ const App = () => {
         path='/portfolio'
         render={ () => {
           return (
-            <h2>Portfolio</h2>
+            <Portfolio />
           )
         }}
       />
