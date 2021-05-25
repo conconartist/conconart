@@ -34,12 +34,30 @@ export const Portfolio = () => {
           <section className='linkedSection'>
             <div className='projectSection'>
               <h3>BookWorm</h3>
-              <p className='projectSummary'>A web application that tracks reading progress, aimed at young readers.</p>
+              <p className='projectSummary'>BookWorm is an app aimed at young readers that allows a user be able track their reading progress. The app includes features that let the user add "bookmarks", comments, and ratings of each book during the user's reading journey.</p>
               <img src={bookwormintro}></img>
+              <div className='projectLinks'>
+                <a href='https://github.com/conconartist/book-worm-fe'>
+                  <button className='buttonOutsideLink'>Github</button>
+                </a>
+                <a href='https://book-worm-2.herokuapp.com/home'>
+                  <button className='buttonOutsideLink'>Deployed Site</button>
+                </a>
+              </div>
               <h4 className='techStackTitle'>Tech Stack:</h4>
               <ul className='projectTechStack'>
-                <li>React</li>
+                <li>React with React Hooks</li>
+                <li>JavaScript(ES6)</li>
+                <li>JSX</li>
                 <li>SCSS</li>
+                <li>Cypress</li>
+                <li>Circle CI</li>
+                <li>Lighthouse</li>
+                <li>Heroku</li>
+                <li>Miro</li>
+                <li>Figma</li>
+                <li>D3</li>
+                <li>GSAP (Greensock)</li>
               </ul>
             </div>
             <div className='projectSection'>
