@@ -5,3 +5,19 @@
     justify-content: center;
     width: 100vw;
   }
+
+@mixin buttonStyle() {
+  align-items: center;
+  border-radius: 8px;
+  color: black;
+  display: flex;
+  font-size: 1.2em;
+  justify-content: center;
+  margin: 0.3em;
+  padding: 0.3em;
+  width: 15vw;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}

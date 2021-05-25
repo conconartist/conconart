@@ -22,20 +22,13 @@ body {
   }
 
 .buttonHome {
-  align-items: center;
+  @include buttonStyle();
   background-color: $fifth-accent-color;
-  border-radius: 8px;
-  color: black;
-  display: flex;
-  font-size: 1.2em;
-  justify-content: center;
-  margin: 0.3em;
-  padding: 0.3em;
-  width: 15vw;
-  &:hover {
-    background-color: black;
-    color: white;
-  }
+}
+
+.buttonOutsideLink {
+  @include buttonStyle();
+  background-color: $sixth-accent-color;
 }
   
 code {
