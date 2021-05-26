@@ -57,8 +57,9 @@ const App = () => {
     }
   }
   return (
-    <main>
+    <>
       <h1>Conconart</h1>
+      <main>
       <Route
         exact
         path='/'
@@ -256,6 +257,7 @@ const App = () => {
         }}
       />
     </main>
+    </>
   );
 }
 

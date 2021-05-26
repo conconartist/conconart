@@ -11,7 +11,7 @@
 @import './StudioCoaching/StudioCoaching.scss';
 @import './VoiceLessons/VoiceLessons.scss';
 
-body {
+body, html {
     background-color: $primary-background-color;
     color: $main-text-color;
     margin: 0;
@@ -29,6 +29,7 @@ body {
 .buttonOutsideLink {
   @include buttonStyle();
   background-color: $sixth-accent-color;
+  width: 30vw;
 }
   
 code {
@@ -49,23 +50,5 @@ h2 {
 
 h3 {
   margin: 0.1em;
-}
-
-.linkedSection {
-  align-items: center;
-  background-color: white;
-  border-radius: 6px;
-  box-shadow: 
-       0 0 0 3px $first-accent-color,
-       0 0 0 6px $second-accent-color,
-       0 0 0 9px $third-accent-color,
-       0 0 0 12px $fourth-accent-color,
-       0 0 0 15px $fifth-accent-color,
-       0 0 0 18px $sixth-accent-color;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 2em;
-  width: 50vw;
 }
 
