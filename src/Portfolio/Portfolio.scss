@@ -17,8 +17,8 @@
 
 .projectLink {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
   margin: 1em;
   width: 100%;
 }
@@ -32,6 +32,10 @@
   justify-content: center;
   margin: 1em;
   padding: 1em;
+  width: 90%;
+}
+
+.projectSummary {
   width: 90%;
 }
 
