@@ -57,8 +57,9 @@ const App = () => {
     }
   }
   return (
-    <main>
+    <>
       <h1>Conconart</h1>
+      <main>
       <Route
         exact
         path='/'
@@ -78,7 +79,7 @@ const App = () => {
                         <li>HTML</li>
                         <li>CSS/ SCSS (Sass)</li>
                         <li>React (Redux, React Hooks, React Router)</li>
-                        <li>TDD (Mocha, Chai, Cypress)</li>
+                        <li>TDD (Mocha, Chai, , Jest, Cypress)</li>
                         <li>UI/UX (User Experience/ User Interface Design)</li>
                         <li>Wireframing</li>
                         <li>Project Planning (GitHub Projects, Kanban)</li>
@@ -87,21 +88,15 @@ const App = () => {
                         <li>Remote Learning/ Working</li>
                         <li>Responsive Web Design</li>
                         <li>Deployment (Vercel, Heroku, GitHub Pages)</li>
+                        <li>D3 (Data Visualization)</li>
+                        <li>GSAP (Greensock) Animation</li>
                       </ul>
                       <h3>What I'm currently learning:</h3>
                       <ul>
-                        <li>Jest</li>
-                        <li>d3</li>
                         <li>GraphQL</li>
                         <li>Postgres</li>
-                        <li>GSAP</li>
+                        <li>Python</li>
                       </ul>
-                      <h3>What I'm currently building:</h3>
-                      <ul>
-                        <li>Mod 4 Capstone project: Bookworm</li>
-                      </ul>
-                      <h3>Available for hire?</h3>
-                        <p>YES.</p>
                       <div className='buttonContainer'>
                         <Link to='/portfolio'>
                           <p className='buttonOne'>Portfolio</p>
@@ -262,6 +257,7 @@ const App = () => {
         }}
       />
     </main>
+    </>
   );
 }
 
