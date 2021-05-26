@@ -42,8 +42,8 @@
   flex-direction: column;
   margin: 1em;
   padding: 0.5em;
-  width: 85%;
-  height: 58em;
+  width: 91%;
+  height: 56em;
 }
 
 .projectSummary {
@@ -67,4 +67,17 @@
 
 .techStackTitle {
   align-self: center;
+}
+
+@media screen and (max-width: 950px) {
+  
+  .linkedSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectSection {
+    height: 100%;
+    padding: 1.5em;
+  }
 }
