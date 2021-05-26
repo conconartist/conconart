@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 import bookwormintro from '../assets/bookwormintro.gif';
 
 export const Portfolio = () => {
-    //Bookworm and description
-    //link to github
-    //link to deployed
-    //tech stack
 
     //Lyric Lava
     //link to github
@@ -35,8 +31,8 @@ export const Portfolio = () => {
             <div className='projectSection'>
               <h3>BookWorm</h3>
               <p className='projectSummary'>BookWorm is an app aimed at young readers that allows a user be able track their reading progress. The app includes features that let the user add "bookmarks", comments, and ratings of each book during the user's reading journey.</p>
-              <img src={bookwormintro}></img>
-              <div className='projectLinks'>
+              <img className='projectDemo' src={bookwormintro} alt='bookWorm app demo'></img>
+              <div className='projectLink'>
                 <a href='https://github.com/conconartist/book-worm-fe'>
                   <button className='buttonOutsideLink'>Github</button>
                 </a>
@@ -44,8 +40,8 @@ export const Portfolio = () => {
                   <button className='buttonOutsideLink'>Deployed Site</button>
                 </a>
               </div>
-              <h4 className='techStackTitle'>Tech Stack:</h4>
               <ul className='projectTechStack'>
+                <p className='techStackTitle'>Tech Stack:</p>
                 <li>React with React Hooks</li>
                 <li>JavaScript(ES6)</li>
                 <li>JSX</li>

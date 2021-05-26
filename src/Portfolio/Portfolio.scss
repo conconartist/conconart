@@ -1,6 +1,46 @@
+.linkedSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
 
 .linkedSectionTitle {
     @include mainLink;
     background-color: $main-text-color;
     color: white;
+}
+
+.projectDemo {
+  width: 90%;
+}
+
+.projectLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 1em;
+  width: 100%;
+}
+
+.projectSection {
+  align-items: center;
+  border: solid 2px black;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em;
+  padding: 1em;
+  width: 90%;
+}
+
+.projectTechStack {
+  align-items: center;
+  background-color: $secondary-background-color;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+  width: 90%;
 }
