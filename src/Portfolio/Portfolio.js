@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { DevSummary } from '../DevSummary/DevSummary';
+import { HomeButton } from '../HomeButton/HomeButton';
 import bookwormintro from '../assets/bookwormintro.gif';
 import lyriclavademo from '../assets/lyriclavademo.gif';
 import faceitdemo from '../assets/faceitdemo.gif';
@@ -11,9 +12,7 @@ export const Portfolio = () => {
 
     return (
         <>
-        {/* <Nav /> */}
           <h2 className='linkedSectionTitle'>Portfolio</h2>
-          <DevSummary />
           <section className='linkedSection'>
             <div className='projectSection'>
               <h3>BookWorm</h3>
@@ -149,9 +148,8 @@ export const Portfolio = () => {
               </div>
             </div>
           </section>
-          <Link to='/'>
-            <p className='buttonHome'>Home</p>
-          </Link>
+          <DevSummary />
+          <HomeButton />
         </>
     )
 

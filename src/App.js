@@ -8,6 +8,7 @@ import { StudioCoaching } from './StudioCoaching/StudioCoaching';
 import { Refashions } from './Refashions/Refashions';
 import { Memades } from './Memades/Memades';
 import { DevSummary } from './DevSummary/DevSummary';
+import { Nav } from './HomeButton/HomeButton';
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
 
