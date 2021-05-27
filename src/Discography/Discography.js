@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Discography = () => {
 
     const items = [
-      {title: "I'm Sorry You Feel That Way", year: 2021, imgSrc: "", description: "Full length album by Fair Elle", links: []},
+      {title: "I'm Sorry You Feel That Way", year: 2021, imgSrc: "", description: "Full length album by Fair Elle", links: ['www.hello.com']},
       {title: "We Will Run", year: 2020, imgSrc: "", description: "Single by Ivory Circle", links: []},
       {title: "Trigger", year: 2020, imgSrc: "", description: "Single by Ivory Circle", links: []},
       {title: "Slip Away", year: 2019, imgSrc: "", description: "Single by Ivory Circle", links: []},
@@ -21,13 +21,20 @@ export const Discography = () => {
     ]
 
     const discoItems = items.map((item) => {
+      
+      const itemLinks = item.links.map((link) => {
+        return <p>{link}</p>
+      })
+
       return (
         <div className='discoItem'>
               <h3 className='discoTitle'>{item.title}</h3>
               <img src='{item.imgSrc}' alt='{item.title} album artwork'></img>
               <h4 className='discoYear'>{item.year}</h4>
               <p className='discoDescription'>{item.description}</p>
-              <p>{item.links}</p>
+              <div className='discoLinks'>
+                {itemLinks}
+              </div>
             </div>
       )
     })
