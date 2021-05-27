@@ -105,10 +105,10 @@ const App = () => {
                           <p className='buttonOne'>Press</p>
                         </Link>
                         <a href='https://www.ivorycircle.com/'>
-                          <button className='buttonOutsideLink'>Ivory Circle</button>
+                          <button className='buttonTwo'>Ivory Circle</button>
                         </a>
                         <a href='https://www.fairelle.me/'>
-                          <button className='buttonOutsideLink'>Fair Elle</button>
+                          <button className='buttonTwo'>Fair Elle</button>
                         </a>
                       </div>
                     </div>
@@ -123,7 +123,7 @@ const App = () => {
                       <p>As a voice teacher, Connie has taught private lessons, choirs, vocal ensembles, and other small vocal groups for over 10 years.  She has a Bachelor’s degree in Music Education with an emphasis in voice for K-12 from the University of Northern Colorado, as well as extensive performing experience in Classical, Jazz, Musical Theatre (Broadway) and contemporary technique.  A lifelong learner and student of music, she has studied voice with Diane Bolden-Taylor, Greg Jasperse, Julie Williams, Peter Eldridge (New York Voices), Dana Landry, Jerry VanderDoes, Celeste Delgado, Britt Quintin, and many others.  Some of Connie’s students have won local talent shows, been selected for All-State Choir, gotten lead roles in musical productions, and/or pursued music in college (and beyond).</p>
                       <div className='buttonContainer'>
                         <a href='https://conconartstudio.com'>
-                          <button className='buttonOutsideLink'>Conconart Studio</button>
+                          <button className='buttonTwo'>Conconart Studio</button>
                         </a>
                       </div>
                     </div>
@@ -139,10 +139,10 @@ const App = () => {
                       {/* embed etsy shops */}
                       <div className='buttonContainer'>
                         <Link to='/refashions'>
-                          <p className='buttonOne'>Refashions</p>
+                          <p className='buttonTwo'>ConCanSew Instagram</p>
                         </Link>
                         <Link to='/memades'>
-                          <p className='buttonTwo'>MeMades</p>
+                          <p className='buttonTwo'>Sings The Sparrow on Etsy</p>
                         </Link>
                       </div>
                     </div>
