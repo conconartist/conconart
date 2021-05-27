@@ -7,7 +7,7 @@ export const DevSummary = () => {
         <p>As a software engineer, Connie is a graduate from Turing School of Software and Design with a certification in Front-End Engineering.
         </p>
         <h3>Technologies:</h3>
-        <ul>
+        <ul className='techStackList mainTechList'>
           <li>JavaScript</li>
           <li>HTML</li>
           <li>CSS/ SCSS (Sass)</li>
