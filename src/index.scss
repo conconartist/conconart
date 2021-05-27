@@ -15,6 +15,8 @@
 body, html {
     background-color: $primary-background-color;
     color: $main-text-color;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     font-family: 'Roboto Condensed', Sans-Serif;
     font-size: 35px;
@@ -25,6 +27,7 @@ body, html {
 .buttonHome {
   @include buttonStyle();
   background-color: $fifth-accent-color;
+  margin-bottom: 5em;
 }
 
 .buttonOutsideLink {

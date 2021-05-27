@@ -60,7 +60,9 @@ const App = () => {
   }
   return (
     <>
-      <h1>Conconart</h1>
+      <header>
+        <h1>Conconart</h1>
+      </header>
       <main>
       <Route
         exact

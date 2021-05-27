@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { DevSummary } from '../DevSummary/DevSummary';
 import { HomeButton } from '../HomeButton/HomeButton';
 import bookwormintro from '../assets/bookwormintro.gif';
