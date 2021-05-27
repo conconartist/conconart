@@ -7,6 +7,7 @@ import { VoiceLessons } from './VoiceLessons/VoiceLessons';
 import { StudioCoaching } from './StudioCoaching/StudioCoaching';
 import { Refashions } from './Refashions/Refashions';
 import { Memades } from './Memades/Memades';
+import { DevSummary } from './DevSummary/DevSummary';
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
 
@@ -68,35 +69,10 @@ const App = () => {
             <div className='linkContainer'>
               <div className='devLink' onClick={toggleDevSection}>
                 <h2 className='mainPageLink'>Software Engineer</h2>
-                {openDevSection &&
+                {openDevSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
-                      <p>
-                      As a software engineer, Connie is a graduate from Turing School of Software and Design with a certification in Front-End Engineering.
-                      </p>
-                      <ul>
-                        <li>JavaScript</li>
-                        <li>HTML</li>
-                        <li>CSS/ SCSS (Sass)</li>
-                        <li>React (Redux, React Hooks, React Router)</li>
-                        <li>TDD (Mocha, Chai, , Jest, Cypress)</li>
-                        <li>UI/UX (User Experience/ User Interface Design)</li>
-                        <li>Wireframing</li>
-                        <li>Project Planning (GitHub Projects, Kanban)</li>
-                        <li>Figma</li>
-                        <li>Twitter</li>
-                        <li>Remote Learning/ Working</li>
-                        <li>Responsive Web Design</li>
-                        <li>Deployment (Vercel, Heroku, GitHub Pages)</li>
-                        <li>D3 (Data Visualization)</li>
-                        <li>GSAP (Greensock) Animation</li>
-                      </ul>
-                      <h3>What I'm currently learning:</h3>
-                      <ul>
-                        <li>GraphQL</li>
-                        <li>Postgres</li>
-                        <li>Python</li>
-                      </ul>
+                      <DevSummary />
                       <div className='buttonContainer'>
                         <Link to='/portfolio'>
                           <p className='buttonOne'>Portfolio</p>
