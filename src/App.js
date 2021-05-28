@@ -135,15 +135,18 @@ const App = () => {
                 {openMakerSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
-                      <p>As an artist and maker, Connie is owner of Sings the Sparrow LLC, a shop of upcycled handmade wallets and small bags for men and women.  </p>
-                      {/* embed etsy shops */}
+                      <p>As an artist and maker, Connie is owner of Sings the Sparrow LLC (a shop of upcycled handmade wallets and small bags) and Wear the Sparrow (a shop of upcycled and handmade accessories).  Both shops can be found on Etsy.</p>
+                      <p>As a sewist, Connie learned to sew at <a href='http://winter-session.com'>Winter Session</a>, making canvas and leather goods.  Eventually, her sewing hobby turned to making clothes and posts her makes on social media. Most recently, she's partnered with ARC Thrift Stores to showcase repurposed fashion.</p>
                       <div className='buttonContainer'>
-                        <Link to='/refashions'>
+                        <a href='https://www.instagram.com/concansew/'>
                           <p className='buttonTwo'>ConCanSew Instagram</p>
-                        </Link>
-                        <Link to='/memades'>
-                          <p className='buttonTwo'>Sings The Sparrow on Etsy</p>
-                        </Link>
+                        </a>
+                        <a href='https://singsthesparrow.etsy.com'>
+                          <p className='buttonTwo'>Sings the Sparrow on Etsy</p>
+                        </a>
+                        <a href='https://wearthesparrow.etsy.com'>
+                          <p className='buttonTwo'>Wear the Sparrow on Etsy</p>
+                        </a>
                       </div>
                     </div>
                   </section>
@@ -213,42 +216,6 @@ const App = () => {
         render={ () => {
           return (
             <Press />
-          )
-        }}
-      />
-      <Route
-        exact
-        path='/lessons'
-        render={ () => {
-          return (
-            <VoiceLessons />
-          )
-        }}
-      />
-      <Route
-        exact
-        path='/coaching'
-        render={ () => {
-          return (
-            <StudioCoaching />
-          )
-        }}
-      />
-      <Route
-        exact
-        path='/refashions'
-        render={ () => {
-          return (
-            <Refashions />
-          )
-        }}
-      />
-      <Route
-        exact
-        path='/memades'
-        render={ () => {
-          return (
-            <Memades />
           )
         }}
       />
