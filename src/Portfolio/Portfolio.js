@@ -12,6 +12,7 @@ export const Portfolio = () => {
     return (
         <>
           <h2 className='linkedSectionTitle'>Portfolio</h2>
+          <DevSummary />
           <section className='linkedSection'>
             <div className='projectSection'>
               <h3>BookWorm</h3>
@@ -147,7 +148,6 @@ export const Portfolio = () => {
               </div>
             </div>
           </section>
-          <DevSummary />
           <HomeButton />
         </>
     )
