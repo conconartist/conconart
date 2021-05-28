@@ -3,17 +3,21 @@
 @import './style/reset';
 @import './style/extends';
 @import './Headshot/Headshot.scss';
-@import './FairElle/FairElle.scss';
-@import './IvoryCircle/IvoryCircle.scss';
+@import './Discography/Discography.scss';
+@import './Licensing/Licensing.scss';
 @import './Memades/Memades.scss';
 @import './Portfolio/Portfolio.scss';
 @import './Refashions/Refashions.scss';
 @import './StudioCoaching/StudioCoaching.scss';
 @import './VoiceLessons/VoiceLessons.scss';
+@import './DevSummary/DevSummary.scss';
+@import './Press/Press.scss';
 
 body, html {
     background-color: $primary-background-color;
     color: $main-text-color;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     font-family: 'Roboto Condensed', Sans-Serif;
     font-size: 35px;
@@ -24,6 +28,7 @@ body, html {
 .buttonHome {
   @include buttonStyle();
   background-color: $fifth-accent-color;
+  margin-bottom: 5em;
 }
 
 .buttonOutsideLink {

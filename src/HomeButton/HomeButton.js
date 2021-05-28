@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const IvoryCircle = () => {
+export const HomeButton = () => {
     return (
-        <>
-          <h2 className='linkedSectionTitle'>Ivory Circle</h2>
+        <div className='buttonContainer'>
             <Link to='/'>
               <p className='buttonHome'>Home</p>
             </Link>
-        </>
+        </div>
     )
 }
