@@ -4,7 +4,7 @@ export const DevSummary = () => {
     
     return (
       <section className='devContainer'>
-        <p>As a software engineer, Connie is a graduate from Turing School of Software and Design with a certification in Front-End Engineering.
+        <p>As a software engineer, Connie is a graduate from <a href='https://turing.edu/'>Turing School of Software and Design</a> with a certification in Front-End Engineering.
         </p>
         <h3>Technologies:</h3>
         <ul className='techStackList mainTechList'>
