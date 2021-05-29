@@ -2,7 +2,7 @@ import React from 'react';
 import Github from '../Github/Github';
 import Twitter from '../Twitter/Twitter';
 import Instagram from '../Instagram/Instagram';
-import { Link } from 'react-router-dom';
+import Email from '../Email/Email';
 
 export const Footer = () => {
   return (
@@ -15,7 +15,7 @@ export const Footer = () => {
           <a href='https://www.instagram.com/conconartist'><Instagram /></a>
         </div>
         <div className='emailContainer'>
-
+        <a href="mailto:conconart.info@gmail.com"><Email /></a>
         </div>
       </div> 
     </section>
