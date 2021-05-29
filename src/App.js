@@ -173,10 +173,6 @@ const App = () => {
                     <p>email me</p>
                 </section>
               }
-                <section className='displaySummary'>
-                  <p className='summaryContainer'>Connie Hong is a software developer, vocalist, songwriter, teacher, lifelong learner, and creative thinker.  She is the lead singer and songwriter for Ivory Circle and Fair Elle, and vocal teacher/ coach in Denver, Colorado.</p>
-                </section>
-
               </div>
             </div>
           )
