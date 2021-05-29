@@ -44,9 +44,14 @@ code {
 }
 
 h1 {
+  background-color: $primary-background-color;
   font-size: 45px;
-  margin: 0.5em;
+  margin: 0;
   margin-bottom: 0.2em;
+  padding: 0.3em;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
 }
 
 h2 {
