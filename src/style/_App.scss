@@ -149,4 +149,20 @@ ul {
   background-color: $third-accent-color;
 }
 
+@media screen and (max-width: 650px) {
+  
+  .realHeadshotImg {
+    height: 400px;
+  }
 
+}
+
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 1em;
+  }
+  .realHeadshotImg {
+    height: 300px;
+  }
+
+}
