@@ -59,7 +59,6 @@ const App = () => {
     <>
     <header>
       <h1>Conconart</h1>
-
     </header>
       <main>
       <Route
@@ -167,10 +166,6 @@ const App = () => {
                     I'm passionate about sustainable fashion and minimal waste-living (especially in the realm of slow-fashion). I strive to cultivate a environment of creativity and responsible-living where I can help better the world, while pursuing a beautiful life full of music and art.</p>
                     <p>My interests include design, crafts, sewing, travel, sitting in craft coffee shops, and taking my dogs anywhere I can bring them with me.</p>
                     <p>I collect mugs (they're the best souvenirs), things my friends made, stickers, and soon mechanical keyboards (I only have one... so far).</p>
-                    <svg>Instagram</svg>
-                    <svg>Twitter</svg>
-                    <svg>Github</svg>
-                    <p>email me</p>
                 </section>
               }
               </div>
