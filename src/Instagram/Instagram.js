@@ -2,7 +2,7 @@ import React from 'react';
 
 const Instagram = () => {
     return (
-      <svg className='instagramIcon' viewBox="0 0 169.063 169.063" >
+      <svg className='instagramIcon' viewBox="0 0 169.063 169.063" alt='Instagram icon link'>
         <g>
 	      <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
 		    c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
