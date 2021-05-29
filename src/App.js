@@ -5,8 +5,8 @@ import { Discography } from './Discography/Discography';
 import { Licensing } from './Licensing/Licensing';
 import { Press } from './Press/Press';
 import { DevSummary } from './DevSummary/DevSummary';
+import { Footer } from './Footer/Footer';
 import Headshot from './Headshot/Headshot.js';
-import Twitter  from './Twitter/Twitter.js';
 import headshotReal from './headshotReal.jpg';
 
 const App = () => {
@@ -176,9 +176,7 @@ const App = () => {
                 <section className='displaySummary'>
                   <p className='summaryContainer'>Connie Hong is a software developer, vocalist, songwriter, teacher, lifelong learner, and creative thinker.  She is the lead singer and songwriter for Ivory Circle and Fair Elle, and vocal teacher/ coach in Denver, Colorado.</p>
                 </section>
-                <section className='contactContainer'>
-                  <a href='https://twitter.com/conconartist'>Hello<Twitter /></a>
-                </section>
+
               </div>
             </div>
           )
@@ -220,6 +218,7 @@ const App = () => {
           )
         }}
       />
+      <Footer />
     </main>
     </>
   );
