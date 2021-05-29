@@ -7,7 +7,7 @@ import equilateral from '../assets/equilateral.jpeg';
 import factorfriction from '../assets/factorfriction.jpeg';
 import burntheeffigy from '../assets/burntheeffigy.jpeg';
 import badvibrations from '../assets/badvibrations.jpeg';
-import isosceles from '../assets/isosceles.jpeg';
+import isosceles from '../assets/isoscelesart.jpeg';
 import rewritten from '../assets/rewritten.jpeg';
 import dummy from '../assets/dummy.jpeg';
 import scalene from '../assets/scalene.jpeg';
