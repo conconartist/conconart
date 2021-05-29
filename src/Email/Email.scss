@@ -1,0 +1,8 @@
+.emailIcon {
+    fill: $fourth-accent-color;
+    height: 48px;
+    &:hover {
+      cursor: pointer;
+      fill: $sixth-accent-color;
+    }
+  }

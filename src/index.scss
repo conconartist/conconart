@@ -8,6 +8,11 @@
 @import './Portfolio/Portfolio.scss';
 @import './DevSummary/DevSummary.scss';
 @import './Press/Press.scss';
+@import './Twitter/Twitter.scss';
+@import './Instagram/Instagram.scss';
+@import './Github/Github.scss';
+@import './Email/Email.scss';
+@import './Footer/Footer.scss';
 
 body, html {
     background-color: $primary-background-color;
@@ -19,12 +24,12 @@ body, html {
     font-size: 35px;
     font-family: 'Cabin', Sans-Serif;
     font-size: 16px;
+    padding-bottom: 8em;
   }
 
 .buttonHome {
   @include buttonStyle();
   background-color: $fifth-accent-color;
-  margin-bottom: 5em;
 }
 
 .buttonOutsideLink {
