@@ -1,4 +1,4 @@
 .instagramIcon {
   fill: $second-accent-color;
-  height: 40px;
+  @include iconStyle();
 }

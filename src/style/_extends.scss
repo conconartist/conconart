@@ -21,3 +21,11 @@
     color: white;
   }
 }
+
+@mixin iconStyle() {
+  height: 40px;
+  &:hover {
+    cursor: pointer;
+    fill: $fifth-accent-color;
+  }
+}

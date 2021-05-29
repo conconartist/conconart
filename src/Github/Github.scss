@@ -1,4 +1,4 @@
 .githubIcon {
     fill: $third-accent-color;
-    height: 40px;
+    @include iconStyle();
   }

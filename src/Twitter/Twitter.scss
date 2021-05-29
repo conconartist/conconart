@@ -1,4 +1,4 @@
 .twitterIcon {
   fill: $first-accent-color;
-  height: 40px;
+  @include iconStyle();
 }
