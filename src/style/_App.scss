@@ -103,11 +103,6 @@ button {
 
 .mainPageLink {
   @include mainLink();
-  // &:hover {
-  //   color: white;
-  //   height: 1.5em;
-  //   cursor: pointer;
-  // }
 }
 
 .musicianLink {
@@ -149,7 +144,7 @@ button {
   display: flex;
   height: 2.5em;
   justify-content: center;
-  margin-left: 1.4em;
+  margin-left: 1.5em;
   width: 100vw;
   &:hover {
     color: white;

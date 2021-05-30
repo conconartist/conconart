@@ -1,35 +1,31 @@
-.arrowIcon {
-  height: 25px;
+.down {
+  height: 22px;
+  padding: 2px;
+  &:hover {
+    fill: white;
+  } 
 }
-
-#devSection {
+.devSection {
   fill: $first-accent-color;
-  // fill: white;
-  &:hover {
-    fill: white;
-  }  
 }
 
-#musicianSection {
+.musicianSection {
   fill: $second-accent-color;
-  // fill: white;
-  &:hover {
-    fill: white;
-  }  
 }
 
-#vocalSection {
+.vocalSection {
   fill: $third-accent-color;
-  // fill: white;
-  &:hover {
-    fill: white;
-  }  
 }
 
-#makerSection {
+.makerSection {
   fill: $fourth-accent-color;
-  // fill: white;
+}
+
+.up {
+  transform: rotate(180deg);
+  height: 22px;
+  padding: 2px;
   &:hover {
     fill: white;
-  }  
+  } 
 }

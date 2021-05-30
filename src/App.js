@@ -15,37 +15,49 @@ const App = () => {
   const [openMusicSection, setOpenMusicSection] = useState(false);
   const [openVocalSection, setOpenVocalSection] = useState(false);
   const [openMakerSection, setOpenMakerSection] = useState(false);
-  const [openAboutMeSection, setOpenAboutMeSection] = useState(false)
+  const [openAboutMeSection, setOpenAboutMeSection] = useState(false);
+  const [devArrowDirection, setDevArrowDirection] = useState('down');
+  const [musicArrowDirection, setMusicArrowDirection] = useState('down');
+  const [vocalArrowDirection, setVocalArrowDirection] = useState('down');
+  const [makerArrowDirection, setMakerArrowDirection] = useState('down');
 
   const toggleDevSection = () => {
     if(openDevSection === false){
       setOpenDevSection(true)
+      setDevArrowDirection('up')
     } else {
       setOpenDevSection(false)
+      setDevArrowDirection('down')
     }
   } 
 
   const toggleMusicSection = () => {
     if(openMusicSection === false) {
       setOpenMusicSection(true)
+      setMusicArrowDirection('up')
     } else {
       setOpenMusicSection(false)
+      setMusicArrowDirection('down')
     }
   }
 
   const toggleVocalSection = () => {
     if(openVocalSection === false) {
       setOpenVocalSection(true)
+      setVocalArrowDirection('up')
     } else {
       setOpenVocalSection(false)
+      setVocalArrowDirection('down')
     }
   }
 
   const toggleMakerSection = () => {
     if(openMakerSection === false) {
       setOpenMakerSection(true)
+      setMakerArrowDirection('up')
     } else {
       setOpenMakerSection(false)
+      setMakerArrowDirection('down')
     }
   }
 
@@ -71,7 +83,7 @@ const App = () => {
               <div className='devLink'>
                 <div className='titleContainer' onClick={toggleDevSection}>
                   <h2 className='mainPageLink'>Software Engineer</h2>
-                  <Arrow category='devSection' arrowDirection='down'/>
+                  <Arrow category='devSection' direction={devArrowDirection}/>
                 </div>
                 {openDevSection && 
                   <section className='linkSection'>
@@ -90,7 +102,7 @@ const App = () => {
               <div className='musicianLink'>
                 <div className='titleContainer' onClick={toggleMusicSection}>
                   <h2 className='mainPageLink'>Musician</h2>
-                  <Arrow category='musicianSection' arrowDirection='down'/>
+                  <Arrow category='musicianSection' direction={musicArrowDirection} />
                 </div>
                 {openMusicSection && 
                   <section className='linkSection'>
@@ -122,7 +134,7 @@ const App = () => {
               <div className='vocalLink'>
                 <div className='titleContainer' onClick={toggleVocalSection}>
                   <h2 className='mainPageLink'>Vocal Coach</h2>
-                  <Arrow category='vocalSection' arrowDirection='down'/>
+                  <Arrow category='vocalSection' direction={vocalArrowDirection}/>
                 </div>
                 {openVocalSection && 
                   <section className='linkSection'>
@@ -140,7 +152,7 @@ const App = () => {
               <div className='sewistLink'>
                 <div className='titleContainer' onClick={toggleMakerSection}>
                   <h2 className='mainPageLink'>Maker</h2>
-                  <Arrow category='makerSection' arrowDirection='down'/>
+                  <Arrow category='makerSection' direction={makerArrowDirection}/>
                 </div>
                 {openMakerSection && 
                   <section className='linkSection'>
