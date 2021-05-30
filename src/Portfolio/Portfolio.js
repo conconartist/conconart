@@ -11,7 +11,12 @@ export const Portfolio = () => {
 
     return (
         <>
-          <h2 className='linkedSectionTitle'>Portfolio</h2>
+          <div className='linkedSectionTitle'>
+            <div className='titleContainer'>
+              <h2>Portfolio</h2>
+            
+            </div>
+          </div>
           <DevSummary />
           <section className='linkedSection'>
             <div className='projectSection'>

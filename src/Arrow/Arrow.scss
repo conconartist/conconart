@@ -1,0 +1,35 @@
+.arrowIcon {
+  height: 25px;
+}
+
+#devSection {
+  fill: $first-accent-color;
+  // fill: white;
+  &:hover {
+    fill: white;
+  }  
+}
+
+#musicianSection {
+  fill: $second-accent-color;
+  // fill: white;
+  &:hover {
+    fill: white;
+  }  
+}
+
+#vocalSection {
+  fill: $third-accent-color;
+  // fill: white;
+  &:hover {
+    fill: white;
+  }  
+}
+
+#makerSection {
+  fill: $fourth-accent-color;
+  // fill: white;
+  &:hover {
+    fill: white;
+  }  
+}

@@ -103,11 +103,11 @@ button {
 
 .mainPageLink {
   @include mainLink();
-  &:hover {
-    color: white;
-    height: 1.5em;
-    cursor: pointer;
-  }
+  // &:hover {
+  //   color: white;
+  //   height: 1.5em;
+  //   cursor: pointer;
+  // }
 }
 
 .musicianLink {
@@ -142,6 +142,19 @@ button {
 
 .summaryHeader {
   padding: 0.5em;
+}
+
+.titleContainer {
+  align-items: center;
+  display: flex;
+  height: 2.5em;
+  justify-content: center;
+  margin-left: 1.4em;
+  width: 100vw;
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
 }
 
 ul {

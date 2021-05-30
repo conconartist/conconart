@@ -8,6 +8,7 @@ import { DevSummary } from './DevSummary/DevSummary';
 import { Footer } from './Footer/Footer';
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
+import Arrow from './Arrow/Arrow.js';
 
 const App = () => {
   const [openDevSection, setOpenDevSection] = useState(false);
@@ -67,8 +68,11 @@ const App = () => {
         render={ () => {
           return (
             <div className='linkContainer'>
-              <div className='devLink' onClick={toggleDevSection}>
-                <h2 className='mainPageLink'>Software Engineer</h2>
+              <div className='devLink'>
+                <div className='titleContainer' onClick={toggleDevSection}>
+                  <h2 className='mainPageLink'>Software Engineer</h2>
+                  <Arrow category='devSection' arrowDirection='down'/>
+                </div>
                 {openDevSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
@@ -83,8 +87,11 @@ const App = () => {
                   </section>
                 }
               </div>
-              <div className='musicianLink' onClick={toggleMusicSection}>
-                <h2 className='mainPageLink'>Musician</h2>
+              <div className='musicianLink'>
+                <div className='titleContainer' onClick={toggleMusicSection}>
+                  <h2 className='mainPageLink'>Musician</h2>
+                  <Arrow category='musicianSection' arrowDirection='down'/>
+                </div>
                 {openMusicSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
@@ -112,8 +119,11 @@ const App = () => {
                   </section>
                 }
               </div>
-              <div className='vocalLink' onClick={toggleVocalSection}>
-                <h2 className='mainPageLink'>Vocal Coach</h2>
+              <div className='vocalLink'>
+                <div className='titleContainer' onClick={toggleVocalSection}>
+                  <h2 className='mainPageLink'>Vocal Coach</h2>
+                  <Arrow category='vocalSection' arrowDirection='down'/>
+                </div>
                 {openVocalSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
@@ -127,8 +137,11 @@ const App = () => {
                   </section>
                 }
               </div>
-              <div className='sewistLink' onClick={toggleMakerSection}>
-                <h2 className='mainPageLink'>Maker</h2>
+              <div className='sewistLink'>
+                <div className='titleContainer' onClick={toggleMakerSection}>
+                  <h2 className='mainPageLink'>Maker</h2>
+                  <Arrow category='makerSection' arrowDirection='down'/>
+                </div>
                 {openMakerSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
