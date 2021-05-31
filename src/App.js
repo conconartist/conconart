@@ -11,6 +11,7 @@ import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
 import Arrow from './Arrow/Arrow.js';
 import OutArrow from './OutArrow/OutArrow.js';
+import resume from './assets/ConnieHongResume.pdf';
 
 const App = () => {
   const [openDevSection, setOpenDevSection] = useState(false);
@@ -96,6 +97,9 @@ const App = () => {
                         <Link to='/portfolio'>
                           <p className='buttonOne'>Portfolio</p>
                         </Link> 
+                        <a href={resume}>
+                          <p className='buttonTwo'>Resume <OutArrow /></p>
+                        </a>
                         {/* Link to conconart Digital */}
                       </div>
                     </div>
