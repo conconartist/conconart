@@ -9,14 +9,16 @@ a {
 }
 
 header {
-  align-items: center;
+  justify-content: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5em;
 }
 
 .aboutMe {
@@ -58,18 +60,33 @@ button {
 }
 
 .buttonTwo {
+  align-items: center;
   background-color: $sixth-accent-color;
   border-radius: 8px;
   color: black;
   display: flex;
   font-size: 1.2em;
+  height: 3vh;
   justify-content: center;
   margin: 0.3em;
   padding: 0.3em;
-  width: 61vw;
+  width: 60vw;
   &:hover {
     background-color: black;
     color: white;
+  }
+}
+
+.categoryTitleContainer {
+  align-items: center;
+  display: flex;
+  height: 2.5em;
+  justify-content: center;
+  margin-right: 1.5em;
+  width: 100vw;
+  &:hover {
+    color: white;
+    cursor: pointer;
   }
 }
 
@@ -89,6 +106,7 @@ button {
   flex-direction: column;
   justify-content: center;
 }
+
 .linkSection {
   align-items: center;
   background-color: $primary-background-color;
@@ -100,11 +118,6 @@ button {
 
 .mainPageLink {
   @include mainLink();
-  &:hover {
-    color: white;
-    height: 1.5em;
-    cursor: pointer;
-  }
 }
 
 .musicianLink {
@@ -141,6 +154,19 @@ button {
   padding: 0.5em;
 }
 
+.titleContainer {
+  align-items: center;
+  display: flex;
+  height: 2.5em;
+  justify-content: center;
+  margin-left: 1.5em;
+  width: 100vw;
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
+
 ul {
   display: grid;
   grid-template-columns: repeat(3, 3);
@@ -150,3 +176,20 @@ ul {
 }
 
 
+@media screen and (max-width: 650px) {
+  
+  .realHeadshotImg {
+    height: 400px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 1em;
+  }
+  .realHeadshotImg {
+    height: 300px;
+  }
+
+}

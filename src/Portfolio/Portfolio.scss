@@ -1,16 +1,11 @@
+
+
 .linkedSection {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1em;
   align-items: center;
   border-radius: 6px;
-  // box-shadow: 
-  //      0 0 0 3px $first-accent-color,
-  //      0 0 0 6px $second-accent-color,
-  //      0 0 0 9px $third-accent-color,
-  //      0 0 0 12px $fourth-accent-color,
-  //      0 0 0 15px $fifth-accent-color,
-  //      0 0 0 18px $sixth-accent-color;
   width: 90vw;
 }
 
@@ -18,6 +13,7 @@
     @include mainLink;
     background-color: $main-text-color;
     color: white;
+    position: fixed;
 }
 
 .projectDemo {
@@ -39,6 +35,7 @@
   border-radius: 6px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   margin: 1em;
   padding: 0.5em;
   width: 91%;
@@ -58,9 +55,30 @@
   width: 90%;
 }
 
+.projectTitle {
+  align-items: center;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 
+       0 0 0 2px $first-accent-color,
+       0 0 0 4px $second-accent-color,
+       0 0 0 6px $third-accent-color,
+       0 0 0 8px $fourth-accent-color,
+       0 0 0 10px $fifth-accent-color,
+       0 0 0 12px $sixth-accent-color;
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  justify-content: center;
+  margin: 1.2em;
+  padding: 0.5em;
+  width: 20vw;
+}
+
 .techStackList {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2em;
 }
 
 .techStackTitle {

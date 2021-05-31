@@ -7,7 +7,7 @@ export const DevSummary = () => {
         <p>As a software engineer, Connie is a graduate from <a href='https://turing.edu/'>Turing School of Software and Design</a> with a certification in Front-End Engineering.
         </p>
         <h3>Technologies:</h3>
-        <ul className='techStackList mainTechList'>
+        <ul className='techStackList'>
           <li>JavaScript</li>
           <li>HTML</li>
           <li>CSS/ SCSS (Sass)</li>
@@ -20,7 +20,7 @@ export const DevSummary = () => {
           <li>Twitter</li>
           <li>Remote Learning/ Working</li>
           <li>Responsive Web Design</li>
-          <li>Deployment (Netlify, Vercel, Heroku, GitHub Pages)</li>
+          <li>Deployment (Netlify, Vercel, Heroku, GH Pages)</li>
           <li>D3 (Data Visualization)</li>
           <li>GSAP (Greensock) Animation</li>
         </ul>

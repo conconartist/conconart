@@ -5,46 +5,61 @@ import { Discography } from './Discography/Discography';
 import { Licensing } from './Licensing/Licensing';
 import { Press } from './Press/Press';
 import { DevSummary } from './DevSummary/DevSummary';
+import { MusicianSummary } from './MusicianSummary/MusicianSummary';
 import { Footer } from './Footer/Footer';
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
+import Arrow from './Arrow/Arrow.js';
+import OutArrow from './OutArrow/OutArrow.js';
 
 const App = () => {
   const [openDevSection, setOpenDevSection] = useState(false);
   const [openMusicSection, setOpenMusicSection] = useState(false);
   const [openVocalSection, setOpenVocalSection] = useState(false);
   const [openMakerSection, setOpenMakerSection] = useState(false);
-  const [openAboutMeSection, setOpenAboutMeSection] = useState(false)
+  const [openAboutMeSection, setOpenAboutMeSection] = useState(false);
+  const [devArrowDirection, setDevArrowDirection] = useState('down');
+  const [musicArrowDirection, setMusicArrowDirection] = useState('down');
+  const [vocalArrowDirection, setVocalArrowDirection] = useState('down');
+  const [makerArrowDirection, setMakerArrowDirection] = useState('down');
 
   const toggleDevSection = () => {
     if(openDevSection === false){
       setOpenDevSection(true)
+      setDevArrowDirection('up')
     } else {
       setOpenDevSection(false)
+      setDevArrowDirection('down')
     }
   } 
 
   const toggleMusicSection = () => {
     if(openMusicSection === false) {
       setOpenMusicSection(true)
+      setMusicArrowDirection('up')
     } else {
       setOpenMusicSection(false)
+      setMusicArrowDirection('down')
     }
   }
 
   const toggleVocalSection = () => {
     if(openVocalSection === false) {
       setOpenVocalSection(true)
+      setVocalArrowDirection('up')
     } else {
       setOpenVocalSection(false)
+      setVocalArrowDirection('down')
     }
   }
 
   const toggleMakerSection = () => {
     if(openMakerSection === false) {
       setOpenMakerSection(true)
+      setMakerArrowDirection('up')
     } else {
       setOpenMakerSection(false)
+      setMakerArrowDirection('down')
     }
   }
 
@@ -67,8 +82,12 @@ const App = () => {
         render={ () => {
           return (
             <div className='linkContainer'>
-              <div className='devLink' onClick={toggleDevSection}>
-                <h2 className='mainPageLink'>Software Engineer</h2>
+
+              <div className='devLink'>
+                <div className='titleContainer' onClick={toggleDevSection}>
+                  <h2 className='mainPageLink'>Software Engineer</h2>
+                  <Arrow category='devSection' direction={devArrowDirection}/>
+                </div>
                 {openDevSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
@@ -83,14 +102,16 @@ const App = () => {
                   </section>
                 }
               </div>
-              <div className='musicianLink' onClick={toggleMusicSection}>
-                <h2 className='mainPageLink'>Musician</h2>
+
+              <div className='musicianLink'>
+                <div className='titleContainer' onClick={toggleMusicSection}>
+                  <h2 className='mainPageLink'>Musician</h2>
+                  <Arrow category='musicianSection' direction={musicArrowDirection} />
+                </div>
                 {openMusicSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
-                      <p>As a songwriter, Connie has been co-writer for the band Ivory Circle since 2013, which has garnered local and national recognition with placements on CW (Charmed), VH1 (Couples Therapy) and Showtime (The Affair promotional spot), radio airplay (including OpenAir CPR, KBCO and KTCL in the Denver-metro area), and press in several publications for her dynamic vocal abilities and heartfelt songs.</p>
-                      <p>In 2019, Ivory Circle was chosen to perform at the Buell Theatre in Denver as part of TedXMileHigh's Humankind Conference. With Ivory Circle, she was also featured in NPR’s All Songs Considered blog for Ivory Circle’s entry in the Tiny Desk Contest for 2018. Some of her writing and vocal collaborations include Holly Lovell, Aaron Wagner, Kathleen Brady (Warner Records), and Aaron Marsh (Copeland, Colombia Records). She is a member of SESAC.</p>
-                      <p>Most recently, Connie released an album "I'm Sorry You Feel That Way" under her new project, Fair Elle, and is a featured Local303 artist for the month of April at Indie102.3 in Denver.</p>
+                      <MusicianSummary />
                       <div className='buttonContainer'>
                         <Link to='/discography'>
                           <p className='buttonOne'>Discography</p>
@@ -102,33 +123,41 @@ const App = () => {
                           <p className='buttonOne'>Press</p>
                         </Link>
                         <a href='https://www.ivorycircle.com/'>
-                          <button className='buttonTwo'>Ivory Circle</button>
+                          <p className='buttonTwo'>Ivory Circle <OutArrow /></p>
                         </a>
                         <a href='https://www.fairelle.me/'>
-                          <button className='buttonTwo'>Fair Elle</button>
+                          <p className='buttonTwo'>Fair Elle <OutArrow /></p>
                         </a>
                       </div>
                     </div>
                   </section>
                 }
               </div>
-              <div className='vocalLink' onClick={toggleVocalSection}>
-                <h2 className='mainPageLink'>Vocal Coach</h2>
+
+              <div className='vocalLink'>
+                <div className='titleContainer' onClick={toggleVocalSection}>
+                  <h2 className='mainPageLink'>Vocal Coach</h2>
+                  <Arrow category='vocalSection' direction={vocalArrowDirection}/>
+                </div>
                 {openVocalSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
                       <p>As a voice teacher, Connie has taught private lessons, choirs, vocal ensembles, and other small vocal groups for over 10 years.  She has a Bachelor’s degree in Music Education with an emphasis in voice for K-12 from the University of Northern Colorado, as well as extensive performing experience in Classical, Jazz, Musical Theatre (Broadway) and contemporary technique.  A lifelong learner and student of music, she has studied voice with Diane Bolden-Taylor, Greg Jasperse, Julie Williams, Peter Eldridge (New York Voices), Dana Landry, Jerry VanderDoes, Celeste Delgado, Britt Quintin, and many others.  Some of Connie’s students have won local talent shows, been selected for All-State Choir, gotten lead roles in musical productions, and/or pursued music in college (and beyond).</p>
                       <div className='buttonContainer'>
                         <a href='https://conconartstudio.com'>
-                          <button className='buttonTwo'>Conconart Studio</button>
+                          <p className='buttonTwo'>Conconart Studio <OutArrow /></p>
                         </a>
                       </div>
                     </div>
                   </section>
                 }
               </div>
-              <div className='sewistLink' onClick={toggleMakerSection}>
-                <h2 className='mainPageLink'>Maker</h2>
+
+              <div className='sewistLink'>
+                <div className='titleContainer' onClick={toggleMakerSection}>
+                  <h2 className='mainPageLink'>Maker</h2>
+                  <Arrow category='makerSection' direction={makerArrowDirection}/>
+                </div>
                 {openMakerSection && 
                   <section className='linkSection'>
                     <div className='summaryContainer'>
@@ -136,19 +165,20 @@ const App = () => {
                       <p>As a sewist, Connie learned to sew at <a href='http://winter-session.com'>Winter Session</a>, making canvas and leather goods.  Eventually, her sewing hobby turned to making clothes and posts her makes on social media. Most recently, she's partnered with ARC Thrift Stores to showcase repurposed fashion.</p>
                       <div className='buttonContainer'>
                         <a href='https://www.instagram.com/concansew/'>
-                          <p className='buttonTwo'>ConCanSew Instagram</p>
+                          <p className='buttonTwo'>ConCanSew Instagram <OutArrow /></p>
                         </a>
                         <a href='https://singsthesparrow.etsy.com'>
-                          <p className='buttonTwo'>Sings the Sparrow on Etsy</p>
+                          <p className='buttonTwo'>Sings the Sparrow on Etsy <OutArrow /></p>
                         </a>
                         <a href='https://wearthesparrow.etsy.com'>
-                          <p className='buttonTwo'>Wear the Sparrow on Etsy</p>
+                          <p className='buttonTwo'>Wear the Sparrow on Etsy <OutArrow /></p>
                         </a>
                       </div>
                     </div>
                   </section>
                 }
               </div>
+
               <div className='aboutMe' onClick={toggleAboutMeSection}>
                 {!openAboutMeSection &&
                   <Headshot />

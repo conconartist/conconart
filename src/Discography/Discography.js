@@ -15,6 +15,7 @@ import thinair from '../assets/thinair.jpeg';
 import slipaway from '../assets/slipaway.jpg';
 import trigger from '../assets/trigger.jpg';
 import wewillrun from '../assets/wewillrun.jpg';
+import BackButton from '../BackButton/BackButton';
 
 export const Discography = () => {
 //filter by fairelle/ivorycircle/feature?
@@ -48,7 +49,12 @@ export const Discography = () => {
     })
     return (
       <>
-        <h2 className='linkedSectionTitle'>Discography</h2>
+        <div className='linkedSectionTitle'>
+          <div className='categoryTitleContainer'>
+            <BackButton />
+            <h2>Discography</h2>
+          </div>
+        </div>
           <section className='discographyGrid'>
 
             {discoItems}

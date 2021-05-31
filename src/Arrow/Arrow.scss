@@ -1,0 +1,32 @@
+.down {
+  height: 22px;
+  padding: 2px;
+  &:hover {
+    fill: white;
+  } 
+}
+
+.devSection {
+  fill: $first-accent-color;
+}
+
+.musicianSection {
+  fill: $second-accent-color;
+}
+
+.vocalSection {
+  fill: $third-accent-color;
+}
+
+.makerSection {
+  fill: $fourth-accent-color;
+}
+
+.up {
+  transform: rotate(180deg);
+  height: 22px;
+  padding: 2px;
+  &:hover {
+    fill: white;
+  } 
+}
