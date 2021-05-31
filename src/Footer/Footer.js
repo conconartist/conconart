@@ -10,13 +10,23 @@ export const Footer = () => {
       <p className='summaryText'><b>Connie Hong</b> is a software developer, vocalist, songwriter, teacher, lifelong learner, and creative thinker.  She is the lead singer and songwriter for Ivory Circle and Fair Elle, and vocal coach in Denver, Colorado.</p>
       <div className='contactContainer'>
         <div className='socialMediaContainer'>
-          <a href='https://github.com/conconartist'><Github /></a>
-          <a href='https://twitter.com/conconartist'><Twitter /></a>
-          <a href='https://www.instagram.com/conconartist'><Instagram /></a>
+          <a href='https://github.com/conconartist' className='iconContainer'>
+            <Github />
+            <p className='ghTitle'>GitHub</p>
+          </a>
+          <a href='https://twitter.com/conconartist' className='iconContainer'>
+            <Twitter />
+            <p className='twitterTitle'>Twitter</p>
+          </a>
+          <a href='https://www.instagram.com/conconartist' className='iconContainer'>
+            <Instagram />
+            <p className='instaTitle'>Instagram</p>
+          </a>
         </div>
-        <div className='emailContainer'>
-        <a href="mailto:conconart.info@gmail.com"><Email /></a>
-        </div>
+        <a href="mailto:conconart.info@gmail.com" className='iconContainer'>
+            <Email />
+            <p className='emailTitle'>conconart.info@gmail.com</p>
+        </a>
       </div> 
     </section>
     )

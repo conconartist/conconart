@@ -31,3 +31,7 @@
     fill: $fifth-accent-color;
   }
 }
+
+@mixin iconText() {
+  font-size: 11px;
+}
