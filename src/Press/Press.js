@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BackButton from '../BackButton/BackButton';
 
 export const Press = () => {
     return (
         <>
-          <h2 className='linkedSectionTitle'>Press</h2>
+          <div className='linkedSectionTitle'>
+            <div className='categoryTitleContainer'>
+              <BackButton />
+              <h2>Press</h2>
+            </div>
+          </div>
           <section className='pressContainer'>
               <article className='pressItem'>
                 <p>"Their sound combines the soft and upbeat voice of vocalist Connie Hong, with shakers, unconventional drumming and guitar riffs and explores themes of self-identity, love and spirituality."</p>
