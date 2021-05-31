@@ -16,6 +16,7 @@
 @import './Arrow/Arrow.scss';
 @import './MusicianSummary/MusicianSummary.scss';
 @import './BackButton/BackButton.scss';
+@import './OutArrow/OutArrow.scss';
 
 body, html {
     background-color: $primary-background-color;
@@ -33,11 +34,13 @@ body, html {
 .buttonHome {
   @include buttonStyle();
   background-color: $fifth-accent-color;
+  cursor: pointer;
 }
 
 .buttonOutsideLink {
   @include buttonStyle();
   background-color: $sixth-accent-color;
+  cursor: pointer;
   width: 30vw;
 }
   

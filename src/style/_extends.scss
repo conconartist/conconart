@@ -12,13 +12,14 @@
   color: black;
   display: flex;
   font-size: 1.2em;
+  height: 4vh;
   justify-content: center;
   margin: 0.3em;
   padding: 0.3em;
-  width: 15vw;
   &:hover {
     background-color: black;
     color: white;
+    fill: white;
   }
 }
 
