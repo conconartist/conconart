@@ -4,6 +4,34 @@
   width: 40vw;
 }
 
+.iconContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ghTitle {
+  @include iconText();
+  color: $dark-third-accent;
+}
+
+.twitterTitle {
+  @include iconText();
+  color: $dark-first-accent;
+}
+
+.instaTitle {
+  @include iconText();
+  color: $dark-second-accent;
+}
+
+.emailTitle {
+  @include iconText();
+  color: $dark-fourth-accent;
+  margin-top: 0.2em;
+}
+
 .socialMediaContainer {
   display: flex;
   flex-direction: row;
