@@ -6,15 +6,16 @@ import lyriclavademo from '../assets/lyriclavademo.gif';
 import faceitdemo from '../assets/faceitdemo.gif';
 import swansondemo from '../assets/swansondemo.gif';
 import tomatillosdemo from '../assets/tomatillosdemo.gif';
+import BackButton from '../BackButton/BackButton';
 
 export const Portfolio = () => {
 
     return (
         <>
           <div className='linkedSectionTitle'>
-            <div className='titleContainer'>
+            <div className='categoryTitleContainer'>
+              <BackButton />
               <h2>Portfolio</h2>
-            
             </div>
           </div>
           <DevSummary />

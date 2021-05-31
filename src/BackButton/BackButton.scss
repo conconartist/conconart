@@ -1,0 +1,10 @@
+.backButton {
+  height: 22px;
+  padding: 2px;
+  &:hover {
+    fill: white;
+  }
+  &:active {
+    fill: $fifth-accent-color;
+  }
+}
