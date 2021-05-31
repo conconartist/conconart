@@ -97,3 +97,10 @@
     padding: 1.5em;
   }
 }
+
+@media screen and (max-width: 500px) {
+  
+ p {
+   font-size: 12px;
+ }
+}
