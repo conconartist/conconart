@@ -23,6 +23,7 @@ export const DevSummary = () => {
           <li>Deployment (Netlify, Vercel, Heroku, GH Pages)</li>
           <li>D3 (Data Visualization)</li>
           <li>GSAP (Greensock) Animation</li>
+          <li>WordPress</li>
         </ul>
         <h3>Currently learning:</h3>
           <ul>
