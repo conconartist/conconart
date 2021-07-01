@@ -11,7 +11,7 @@ import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
 import Arrow from './Arrow/Arrow.js';
 import OutArrow from './OutArrow/OutArrow.js';
-import resume from './assets/ConnieHongResume.pdf';
+import resume from './assets/ConnieHongSoftwareDev.pdf';
 
 const App = () => {
   const [openDevSection, setOpenDevSection] = useState(false);

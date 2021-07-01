@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr;
   padding: 2em;
   margin-top: 2em;
+  width: 90vw;
 }
 
 .pressItem {
@@ -10,4 +11,13 @@
   border-radius: 6px;
   margin: 1em;
   padding: 1em;
+}
+
+@media screen and (max-width: 650px) {
+  
+  .pressContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
 }

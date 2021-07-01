@@ -24,9 +24,11 @@ export const DevSummary = () => {
           <li>D3 (Data Visualization)</li>
           <li>GSAP (Greensock) Animation</li>
           <li>WordPress</li>
+          <li>Express</li>
+          <li>MySQL</li>
         </ul>
         <h3>Currently learning:</h3>
-          <ul>
+          <ul className='techLearningList'>
             <li>GraphQL</li>
             <li>Postgres</li>
             <li>Python</li>
