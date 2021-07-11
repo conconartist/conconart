@@ -21,6 +21,41 @@ export const Portfolio = () => {
           </div>
           <DevSummary />
           <section className='linkedSection'>
+
+            <div className='projectSection'>
+              <h3 className='projectTitle'>FaceIt</h3>
+              <img className='projectDemo' src={faceitdemo} alt='FaceIt app demo'></img>
+              <p className='projectSummary'>FaceIt is a Progressive Web Application that informs and helps the concerned & conscientious consumer find curated beauty products that match their lifestyle.</p>
+              <div className='projectTechStack'>
+                <h4 className='techStackTitle'>Technologies Used:</h4>
+                <ul className='techStackList'>
+                  <li>React</li>
+                  <li>JavaScript(ES6)</li>
+                  <li>CSS</li>
+                  <li>Cypress</li>
+                  <li>Lighthouse</li>
+                  <li>Heroku</li>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+              <div className='projectLink'>
+                <a href='https://github.com/conconartist/face-it'>
+                  <button className='buttonOutsideLink'>
+                    <p>Github Repo</p>
+                    <OutArrow />
+                  </button>
+                </a>
+                <a href='https://face-it-blue.vercel.app/'>
+                  <button className='buttonOutsideLink'>
+                    <p>Deployed Site</p>
+                    <OutArrow />
+                  </button>
+                </a>
+              </div>
+            </div>
+
             <div className='projectSection'>
               <h3 className='projectTitle'>BookWorm</h3>
               <img className='projectDemo' src={bookwormintro} alt='bookWorm app demo'></img>
@@ -83,37 +118,6 @@ export const Portfolio = () => {
                   </button>
                 </a>
                 <a href='https://lyric-lava.vercel.app/'>
-                  <button className='buttonOutsideLink'>
-                    <p>Deployed Site</p>
-                    <OutArrow />
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            <div className='projectSection'>
-              <h3 className='projectTitle'>FaceIt</h3>
-              <img className='projectDemo' src={faceitdemo} alt='FaceIt app demo'></img>
-              <p className='projectSummary'>FaceIt is a Progressive Web Application that informs and helps the concerned & conscientious consumer find curated beauty products that match their lifestyle.</p>
-              <div className='projectTechStack'>
-                <h4 className='techStackTitle'>Technologies Used:</h4>
-                <ul className='techStackList'>
-                  <li>React</li>
-                  <li>JavaScript(ES6)</li>
-                  <li>CSS</li>
-                  <li>Cypress</li>
-                  <li>Lighthouse</li>
-                  <li>Heroku</li>
-                </ul>
-              </div>
-              <div className='projectLink'>
-                <a href='https://github.com/conconartist/face-it'>
-                  <button className='buttonOutsideLink'>
-                    <p>Github Repo</p>
-                    <OutArrow />
-                  </button>
-                </a>
-                <a href='https://face-it.vercel.app/'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                     <OutArrow />
