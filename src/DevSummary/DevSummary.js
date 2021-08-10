@@ -26,11 +26,11 @@ export const DevSummary = () => {
           <li>WordPress</li>
           <li>Express</li>
           <li>MySQL</li>
+          <li>Node.js</li>
         </ul>
         <h3>Currently learning:</h3>
           <ul className='techLearningList'>
-            <li>GraphQL</li>
-            <li>Postgres</li>
+            <li>TypeScript</li>
             <li>Python</li>
           </ul>         
       </section>
