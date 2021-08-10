@@ -100,7 +100,9 @@ const App = () => {
                         <a href={resume}>
                           <p className='buttonTwo'>Resume <OutArrow /></p>
                         </a>
-                        {/* Link to conconart Digital */}
+                        <a href="https://www.conconartdigital.com">
+                          <p className='buttonOne'>Conconart Digital <OutArrow /></p>
+                        </a>
                       </div>
                     </div>
                   </section>
