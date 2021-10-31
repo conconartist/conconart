@@ -30,8 +30,7 @@ export const DevSummary = () => {
         </ul>
         <h3>Currently learning:</h3>
           <ul className='techLearningList'>
-            <li>TypeScript</li>
-            <li>Python</li>
+            <li>Ruby on Rails</li>
           </ul>         
       </section>
     )
