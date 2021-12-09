@@ -1,7 +1,7 @@
 import React from 'react';
 
 export const DevSummary = () => {
-    
+
     return (
       <section className='devContainer'>
         <p>As a software engineer, Connie is a graduate from <a href='https://turing.edu/'>Turing School of Software and Design</a> with a certification in Front-End Engineering.
@@ -11,7 +11,7 @@ export const DevSummary = () => {
           <li>JavaScript</li>
           <li>HTML</li>
           <li>CSS/ SCSS (Sass)</li>
-          <li>React (Redux, React Hooks, React Router)</li>
+          <li>React</li>
           <li>TDD (Mocha, Chai, Jest, Cypress)</li>
           <li>UI/UX (User Experience/ User Interface Design)</li>
           <li>Wireframing</li>
@@ -27,11 +27,9 @@ export const DevSummary = () => {
           <li>Express</li>
           <li>MySQL</li>
           <li>Node.js</li>
+          <li>Ruby on Rails</li>
+          <li>PHP</li>
         </ul>
-        <h3>Currently learning:</h3>
-          <ul className='techLearningList'>
-            <li>Ruby on Rails</li>
-          </ul>         
       </section>
     )
 }
