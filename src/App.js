@@ -83,7 +83,7 @@ const App = () => {
         render={ () => {
           return (
             <div className='linkContainer'>
-
+              
               <div className='devLink'>
                 <div className='titleContainer' onClick={toggleDevSection}>
                   <h2 className='mainPageLink'>Software Engineer</h2>
