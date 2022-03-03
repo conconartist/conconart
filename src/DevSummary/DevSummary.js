@@ -12,6 +12,7 @@ export const DevSummary = () => {
           <li>HTML</li>
           <li>CSS/ SCSS (Sass)</li>
           <li>React</li>
+          <li>React Native</li>
           <li>TDD (Mocha, Chai, Jest, Cypress)</li>
           <li>UI/UX (User Experience/ User Interface Design)</li>
           <li>Wireframing</li>
