@@ -13,10 +13,10 @@ export const DevSummary = () => {
           <li>CSS/ SCSS (Sass)</li>
           <li>React</li>
           <li>React Native</li>
-          <li>TDD (Mocha, Chai, Jest, Cypress)</li>
+          <li>TDD (Mocha, Chai, Jest, Cypress, Capybara)</li>
           <li>UI/UX (User Experience/ User Interface Design)</li>
           <li>Wireframing</li>
-          <li>Project Planning (GitHub Projects, Kanban)</li>
+          <li>Project Planning (GitHub Projects, Kanban, Trello)</li>
           <li>Figma</li>
           <li>Twitter</li>
           <li>Remote Learning/ Working</li>
@@ -27,6 +27,7 @@ export const DevSummary = () => {
           <li>WordPress</li>
           <li>Express</li>
           <li>MySQL</li>
+          <li>Postgres</li>
           <li>Node.js</li>
           <li>Ruby on Rails</li>
           <li>PHP</li>
