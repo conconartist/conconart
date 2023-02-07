@@ -49,7 +49,7 @@ const App = () => {
         render={ () => {
           return (
             <div className='linkContainer'>
-
+              
               <div className='devLink'>
                 <div className='titleContainer' onClick={() => toggleSection('dev')}>
                   <h2 className='mainPageLink'>Software Engineer</h2>
