@@ -9,58 +9,24 @@ import { MusicianSummary } from './MusicianSummary/MusicianSummary';
 import { Footer } from './Footer/Footer';
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
-import Arrow from './Arrow/Arrow.js';
 import OutArrow from './OutArrow/OutArrow.js';
 import resume from './assets/ConnieHongSoftwareDev.pdf';
 
 const App = () => {
-  const [openDevSection, setOpenDevSection] = useState(false);
-  const [openMusicSection, setOpenMusicSection] = useState(false);
-  const [openVocalSection, setOpenVocalSection] = useState(false);
-  const [openMakerSection, setOpenMakerSection] = useState(false);
+  const [openSection, setOpenSection] = useState(null);
   const [openAboutMeSection, setOpenAboutMeSection] = useState(false);
-  const [devArrowDirection, setDevArrowDirection] = useState('down');
-  const [musicArrowDirection, setMusicArrowDirection] = useState('down');
-  const [vocalArrowDirection, setVocalArrowDirection] = useState('down');
-  const [makerArrowDirection, setMakerArrowDirection] = useState('down');
 
-  const toggleDevSection = () => {
-    if(openDevSection === false){
-      setOpenDevSection(true)
-      setDevArrowDirection('up')
-    } else {
-      setOpenDevSection(false)
-      setDevArrowDirection('down')
-    }
-  } 
-
-  const toggleMusicSection = () => {
-    if(openMusicSection === false) {
-      setOpenMusicSection(true)
-      setMusicArrowDirection('up')
-    } else {
-      setOpenMusicSection(false)
-      setMusicArrowDirection('down')
-    }
-  }
-
-  const toggleVocalSection = () => {
-    if(openVocalSection === false) {
-      setOpenVocalSection(true)
-      setVocalArrowDirection('up')
-    } else {
-      setOpenVocalSection(false)
-      setVocalArrowDirection('down')
-    }
-  }
-
-  const toggleMakerSection = () => {
-    if(openMakerSection === false) {
-      setOpenMakerSection(true)
-      setMakerArrowDirection('up')
-    } else {
-      setOpenMakerSection(false)
-      setMakerArrowDirection('down')
+  const toggleSection = (section) => {
+    if(section === openSection) {
+      setOpenSection(null)
+    } else if(section === 'dev') {
+      setOpenSection('dev')
+    } else if(section === 'music') {
+      setOpenSection('music')
+    } else if(section === 'vocal') {
+      setOpenSection('vocal')
+    } else if(section === 'maker') {
+      setOpenSection('maker')
     }
   }
 
@@ -85,18 +51,17 @@ const App = () => {
             <div className='linkContainer'>
               
               <div className='devLink'>
-                <div className='titleContainer' onClick={toggleDevSection}>
+                <div className='titleContainer' onClick={() => toggleSection('dev')}>
                   <h2 className='mainPageLink'>Software Engineer</h2>
-                  <Arrow category='devSection' direction={devArrowDirection}/>
                 </div>
-                {openDevSection && 
+                {openSection === 'dev' &&
                   <section className='linkSection'>
                     <div className='summaryContainer'>
                       <DevSummary />
                       <div className='buttonContainer'>
                         <Link to='/portfolio'>
                           <p className='buttonOne'>Portfolio</p>
-                        </Link> 
+                        </Link>
                         <a href={resume}>
                           <p className='buttonTwo'>Resume <OutArrow /></p>
                         </a>
@@ -110,18 +75,17 @@ const App = () => {
               </div>
 
               <div className='musicianLink'>
-                <div className='titleContainer' onClick={toggleMusicSection}>
+                <div className='titleContainer' onClick={() => toggleSection('music')}>
                   <h2 className='mainPageLink'>Musician</h2>
-                  <Arrow category='musicianSection' direction={musicArrowDirection} />
                 </div>
-                {openMusicSection && 
+                {openSection === 'music' &&
                   <section className='linkSection'>
                     <div className='summaryContainer'>
                       <MusicianSummary />
                       <div className='buttonContainer'>
                         <Link to='/discography'>
                           <p className='buttonOne'>Discography</p>
-                        </Link> 
+                        </Link>
                         <Link to='/licensing'>
                           <p className='buttonOne'>As Heard On</p>
                         </Link>
@@ -141,11 +105,10 @@ const App = () => {
               </div>
 
               <div className='vocalLink'>
-                <div className='titleContainer' onClick={toggleVocalSection}>
+                <div className='titleContainer' onClick={() => toggleSection('vocal')}>
                   <h2 className='mainPageLink'>Vocal Coach</h2>
-                  <Arrow category='vocalSection' direction={vocalArrowDirection}/>
                 </div>
-                {openVocalSection && 
+                {openSection === 'vocal' &&
                   <section className='linkSection'>
                     <div className='summaryContainer'>
                       <p>As a voice teacher, Connie has taught private lessons, choirs, vocal ensembles, and other small vocal groups for over 10 years.  She has a Bachelor’s degree in Music Education with an emphasis in voice for K-12 from the University of Northern Colorado, as well as extensive performing experience in Classical, Jazz, Musical Theatre (Broadway) and contemporary technique.  A lifelong learner and student of music, she has studied voice with Diane Bolden-Taylor, Greg Jasperse, Julie Williams, Peter Eldridge (New York Voices), Dana Landry, Jerry VanderDoes, Celeste Delgado, Britt Quintin, and many others.  Some of Connie’s students have won local talent shows, been selected for All-State Choir, gotten lead roles in musical productions, and/or pursued music in college (and beyond).</p>
@@ -160,11 +123,10 @@ const App = () => {
               </div>
 
               <div className='sewistLink'>
-                <div className='titleContainer' onClick={toggleMakerSection}>
+                <div className='titleContainer' onClick={() => toggleSection('maker')}>
                   <h2 className='mainPageLink'>Maker</h2>
-                  <Arrow category='makerSection' direction={makerArrowDirection}/>
                 </div>
-                {openMakerSection && 
+                {openSection === 'maker' &&
                   <section className='linkSection'>
                     <div className='summaryContainer'>
                       <p>As an artist and maker, Connie is owner of Sings the Sparrow LLC (a shop of upcycled handmade wallets and small bags) and Wear the Sparrow (a shop of upcycled and handmade accessories).  Both shops can be found on Etsy.</p>
@@ -185,23 +147,23 @@ const App = () => {
                 }
               </div>
 
-              <div className='aboutMe' onClick={toggleAboutMeSection}>
+              <div className='aboutMe' onClick={() => toggleAboutMeSection()}>
                 {!openAboutMeSection &&
                   <Headshot />
                 }
-                {openAboutMeSection && 
+                {openAboutMeSection &&
                   <section className='summary'>
-                  <h2>I'm Connie Hong (she/her).</h2> 
+                  <h3>I'm Connie Hong (she/her).</h3>
                   <img
                     className='realHeadshotImg'
                     src={headshotReal}
                     alt='Connie Hong sitting in a chair and smiling'>
                   </img>
-                  <h3 className="summaryHeader">I love to find beauty and artistic expression in everything I do, so programming is no exception.</h3>
-                    <p>Recent world and life events afforded me the opportunity to begin a career in software development to explore my interests and curiosities, while helping my community (and beyond) in new ways through software engineering and frontend development. 
+                  <h4 className="summaryHeader">I love to find beauty and artistic expression in everything I do, so programming is no exception.</h4>
+                    <p>Recent world and life events afforded me the opportunity to begin a career in software development to explore my interests and curiosities, while helping my community (and beyond) in new ways through software engineering and frontend development.
                     I'm passionate about sustainable fashion and minimal waste-living (especially in the realm of slow-fashion). I strive to cultivate an environment of creativity and responsible-living where I can help better the world, while pursuing a beautiful life full of music and art.</p>
-                    <p>My interests include design, crafts, sewing, travel, sitting in craft coffee shops, and taking my dogs anywhere I can bring them with me.</p>
-                    <p>I collect mugs (they're the best souvenirs), things my friends made, stickers, and soon mechanical keyboards (I only have one... so far).</p>
+                    <p>My interests include design, crafts, sewing, travel, sitting in coffee shops, and taking my dogs anywhere I can bring them with me.</p>
+                    <p>I collect mugs (they're the best souvenirs), things my friends made, stickers, and mechanical keyboards.</p>
                 </section>
               }
               </div>
