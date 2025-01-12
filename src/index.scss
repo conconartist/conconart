@@ -20,6 +20,7 @@
 
 body, html {
     background-color: $primary-background-color;
+    background-image: url("./background.PNG");
     color: $main-text-color;
     display: flex;
     flex-direction: column;
@@ -42,7 +43,7 @@ body, html {
   background-color: $sixth-accent-color;
   cursor: pointer;
 }
-  
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
