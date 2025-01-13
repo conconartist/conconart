@@ -50,14 +50,13 @@ code {
 }
 
 h1 {
-  background-color: $primary-background-color;
-  font-size: 45px;
+  color: $heading-text-color;
+  font-size: 55px;
   margin: 0;
   margin-bottom: 0.2em;
   padding: 0.3em;
-  position: fixed;
   text-align: center;
-  width: 100vw;
+  width: 50%;
 }
 
 h2 {

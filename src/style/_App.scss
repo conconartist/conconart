@@ -104,7 +104,7 @@ button {
 .linkContainer {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -136,7 +136,7 @@ button {
   align-items: center;
   background-color: white;
   border-radius: 6px;
-  box-shadow: 
+  box-shadow:
        0 0 0 3px $first-accent-color,
        0 0 0 6px $second-accent-color,
        0 0 0 9px $third-accent-color,
@@ -158,10 +158,10 @@ button {
 .titleContainer {
   align-items: center;
   display: flex;
-  height: 2.5em;
+  height: 200px;
+  width:200px;
   justify-content: center;
   margin-left: 1.5em;
-  width: 100vw;
   &:hover {
     color: white;
     cursor: pointer;
@@ -178,7 +178,7 @@ ul {
 
 
 @media screen and (max-width: 650px) {
-  
+
   .realHeadshotImg {
     height: 400px;
   }
@@ -189,7 +189,7 @@ ul {
   h2 {
     font-size: 1em;
   }
-  
+
   .buttonOne, .buttonTwo {
     font-size: 12px;
   }
