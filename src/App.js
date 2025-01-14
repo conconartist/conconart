@@ -10,7 +10,7 @@ import { Footer } from './Footer/Footer';
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
 import OutArrow from './OutArrow/OutArrow.js';
-import resume from './assets/ConnieHongSoftwareDev.pdf';
+import resume from './assets/ConnieHongSoftwareEngineer.pdf';
 
 const App = () => {
   const [openSection, setOpenSection] = useState(null);
@@ -28,6 +28,7 @@ const App = () => {
     } else if(section === 'maker') {
       setOpenSection('maker')
     }
+
   }
 
   const toggleAboutMeSection = () => {
@@ -37,10 +38,14 @@ const App = () => {
       setOpenAboutMeSection(false)
     }
   }
+
+  const displaySection = (type) => {
+
+  }
   return (
     <>
     <header>
-      <h1>CONCONART</h1>
+      <h1><a href="/">CONCONART</a></h1>
       <div className='summaryText'>
         <p><b>Connie Hong</b> is a software developer, vocalist, songwriter, teacher, lifelong learner, and creative thinker.</p>
       </div>
