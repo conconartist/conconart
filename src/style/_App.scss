@@ -91,26 +91,40 @@ button {
   }
 }
 
-.devLink {
-  background-color: $first-accent-color;
-}
-
 .displaySummary {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.linkContainer {
+ul.linkContainer {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  list-style-type: none;
+  padding:0;
+  gap:2em;
+}
+
+ul.linkContainer li{border-radius:50%}
+
+ul.linkContainer li:first-child{
+  background-color: $first-accent-color;
+}
+ul.linkContainer li:nth-child(2) {
+  background-color: $second-accent-color;
+}
+ul.linkContainer li:nth-child(3) {
+  background-color: $third-accent-color;
+}
+ul.linkContainer li:nth-child(4) {
+  background-color: $fourth-accent-color;
 }
 
 .linkSection {
   align-items: center;
-  background-color: $primary-background-color;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,22 +135,15 @@ button {
   @include mainLink();
 }
 
-.musicianLink {
-  background-color: $second-accent-color;
-}
-
 .realHeadshotImg {
   height: 500px;
-}
-.sewistLink {
-  background-color: $fourth-accent-color;
 }
 
 .summary, .summaryContainer {
   align-items: center;
   background-color: white;
   border-radius: 6px;
-  box-shadow: 
+  box-shadow:
        0 0 0 3px $first-accent-color,
        0 0 0 6px $second-accent-color,
        0 0 0 9px $third-accent-color,
@@ -158,10 +165,9 @@ button {
 .titleContainer {
   align-items: center;
   display: flex;
-  height: 2.5em;
+  height: 200px;
+  width:200px;
   justify-content: center;
-  margin-left: 1.5em;
-  width: 100vw;
   &:hover {
     color: white;
     cursor: pointer;
@@ -172,13 +178,10 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 3);
 }
-.vocalLink {
-  background-color: $third-accent-color;
-}
 
 
 @media screen and (max-width: 650px) {
-  
+
   .realHeadshotImg {
     height: 400px;
   }
@@ -189,7 +192,7 @@ ul {
   h2 {
     font-size: 1em;
   }
-  
+
   .buttonOne, .buttonTwo {
     font-size: 12px;
   }

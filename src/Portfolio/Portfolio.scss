@@ -6,14 +6,13 @@
   padding: 1em;
   align-items: center;
   border-radius: 6px;
-  width: 90vw;
+  gap:2em;
 }
 
 .linkedSectionTitle {
     @include mainLink;
     background-color: $main-text-color;
     color: white;
-    position: fixed;
 }
 
 .projectDemo {
@@ -39,7 +38,7 @@
   margin: 1em;
   padding: 0.5em;
   width: 91%;
-  height: 56em;
+  height: 61em;
 }
 
 .projectSummary {
@@ -59,7 +58,7 @@
   align-items: center;
   background-color: white;
   border-radius: 6px;
-  box-shadow: 
+  box-shadow:
        0 0 0 2px $first-accent-color,
        0 0 0 4px $second-accent-color,
        0 0 0 6px $third-accent-color,
@@ -86,7 +85,7 @@
 }
 
 @media screen and (max-width: 950px) {
-  
+
   .linkedSection {
     display: flex;
     flex-direction: column;
@@ -99,7 +98,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  
+
  p {
    font-size: 12px;
  }
@@ -108,3 +107,22 @@
    font-size: 11px;
  }
 }
+
+@media screen and (min-width: 1700px){
+  .projectSection{
+    height: 68em;
+  }
+}
+
+@media screen and (min-width: 1800px){
+  .projectSection{
+    height: 75em;
+  }
+}
+
+@media screen and (min-width: 2400px){
+  .projectSection{
+    height:100em;
+  }
+}
+

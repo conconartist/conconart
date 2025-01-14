@@ -20,6 +20,7 @@
 
 body, html {
     background-color: $primary-background-color;
+    background-image: url("./background.PNG");
     color: $main-text-color;
     display: flex;
     flex-direction: column;
@@ -42,21 +43,20 @@ body, html {
   background-color: $sixth-accent-color;
   cursor: pointer;
 }
-  
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 h1 {
-  background-color: $primary-background-color;
-  font-size: 45px;
+  color: $heading-text-color;
+  font-size: 55px;
   margin: 0;
   margin-bottom: 0.2em;
   padding: 0.3em;
-  position: fixed;
   text-align: center;
-  width: 100vw;
+  width: 50%;
 }
 
 h2 {
