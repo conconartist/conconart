@@ -14,7 +14,6 @@ import resume from './assets/ConnieHongSoftwareEngineer.pdf';
 
 const App = () => {
   const [openSection, setOpenSection] = useState(null);
-  const [openAboutMeSection, setOpenAboutMeSection] = useState(false);
 
   const toggleSection = (section) => {
     if(section === openSection) {
@@ -28,15 +27,6 @@ const App = () => {
     } else if(section === 'maker') {
       setOpenSection('maker')
     }
-
-  }
-
-  const toggleAboutMeSection = () => {
-    if(openAboutMeSection === false) {
-      setOpenAboutMeSection(true)
-    } else {
-      setOpenAboutMeSection(false)
-    }
   }
 
   const displaySection = (type) => {
@@ -46,7 +36,7 @@ const App = () => {
     <>
     <header>
       <h1><a href="/">CONCONART</a></h1>
-      <div className='summaryText'>
+      <div className='summaryContainer'>
         <p><b>Connie Hong</b> is a software developer, vocalist, songwriter, teacher, lifelong learner, and creative thinker.</p>
       </div>
     </header>
@@ -57,44 +47,39 @@ const App = () => {
         render={ () => {
           return (
             <>
-              <div className='linkContainer'>
-
-                <div className='devLink'>
+              <ul className='linkContainer'>
+                <li className='devLink'>
                   <div className='titleContainer' onClick={() => toggleSection('dev')}>
                     <h2 className='mainPageLink'>Software Engineer</h2>
                   </div>
-                </div>
-
-                <div className='musicianLink'>
+                </li>
+                <li className='musicianLink'>
                   <div className='titleContainer' onClick={() => toggleSection('music')}>
                     <h2 className='mainPageLink'>Musician</h2>
                   </div>
-
-                </div>
-
-                <div className='vocalLink'>
+                </li>
+                <li className='vocalLink'>
                   <div className='titleContainer' onClick={() => toggleSection('vocal')}>
                     <h2 className='mainPageLink'>Vocal Coach</h2>
                   </div>
-                </div>
-
-                <div className='sewistLink'>
+                </li>
+                <li className='sewistLink'>
                   <div className='titleContainer' onClick={() => toggleSection('maker')}>
                     <h2 className='mainPageLink'>Maker</h2>
                   </div>
-                </div>
-              </div>
+                </li>
+              </ul>
               {openSection === 'dev' &&
                 <section className='linkSection'>
                   <div className='summaryContainer'>
+                    <a href={resume}>
+                        <p className='buttonTwo'>Resume <OutArrow /></p>
+                      </a>
                     <DevSummary />
                     <div className='buttonContainer'>
                       <Link to='/portfolio'>
                         <p className='buttonOne'>Portfolio</p>
                       </Link>
-                      <a href={resume}>
-                        <p className='buttonTwo'>Resume <OutArrow /></p>
-                      </a>
                       <a href="https://www.conconartdigital.com">
                         <p className='buttonOne'>Conconart Digital <OutArrow /></p>
                       </a>
@@ -151,25 +136,20 @@ const App = () => {
                 </section>
               }
 
-              <div className='aboutMe' onClick={() => toggleAboutMeSection()}>
-                  {!openAboutMeSection &&
-                  <Headshot />
-                }
-                {openAboutMeSection &&
-                  <section className='summary'>
-                  <h3>I'm Connie Hong (she/her).</h3>
-                  <img
-                    className='realHeadshotImg'
-                    src={headshotReal}
-                    alt='Connie Hong sitting in a chair and smiling'>
-                  </img>
-                  <h4 className="summaryHeader">I love to find beauty and artistic expression in everything I do, so programming is no exception.</h4>
-                    <p>Recent world and life events afforded me the opportunity to begin a career in software development to explore my interests and curiosities, while helping my community (and beyond) in new ways through software engineering and frontend development.
-                    I'm passionate about sustainable fashion and minimal waste-living (especially in the realm of slow-fashion). I strive to cultivate an environment of creativity and responsible-living where I can help better the world, while pursuing a beautiful life full of music and art.</p>
-                    <p>My interests include design, crafts, sewing, travel, sitting in coffee shops, and taking my dogs anywhere I can bring them with me.</p>
-                    <p>I collect mugs (they're the best souvenirs), things my friends made, stickers, and mechanical keyboards.</p>
-                </section>
-              }
+              <div className='aboutMe'>
+                <section className='summary'>
+                <h3>I'm Connie Hong (she/her).</h3>
+                <img
+                  className='realHeadshotImg'
+                  src={headshotReal}
+                  alt='Connie Hong sitting in a chair and smiling'>
+                </img>
+                <h4 className="summaryHeader">I love to find beauty and artistic expression in everything I do, so programming is no exception.</h4>
+                  <p>Recent world and life events afforded me the opportunity to begin a career in software development to explore my interests and curiosities, while helping my community (and beyond) in new ways through software engineering and frontend development.
+                  I'm passionate about sustainable fashion and minimal waste-living (especially in the realm of slow-fashion). I strive to cultivate an environment of creativity and responsible-living where I can help better the world, while pursuing a beautiful life full of music and art.</p>
+                  <p>My interests include design, crafts, sewing, travel, sitting in coffee shops, and taking my dogs anywhere I can bring them with me.</p>
+                  <p>I collect mugs (they're the best souvenirs), things my friends made, stickers, and mechanical keyboards.</p>
+              </section>
               </div>
           </>
           )

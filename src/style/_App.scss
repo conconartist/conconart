@@ -91,26 +91,40 @@ button {
   }
 }
 
-.devLink {
-  background-color: $first-accent-color;
-}
-
 .displaySummary {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.linkContainer {
+ul.linkContainer {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  list-style-type: none;
+  padding:0;
+  gap:2em;
+}
+
+ul.linkContainer li{border-radius:50%}
+
+ul.linkContainer li:first-child{
+  background-color: $first-accent-color;
+}
+ul.linkContainer li:nth-child(2) {
+  background-color: $second-accent-color;
+}
+ul.linkContainer li:nth-child(3) {
+  background-color: $third-accent-color;
+}
+ul.linkContainer li:nth-child(4) {
+  background-color: $fourth-accent-color;
 }
 
 .linkSection {
   align-items: center;
-  background-color: $primary-background-color;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,15 +135,8 @@ button {
   @include mainLink();
 }
 
-.musicianLink {
-  background-color: $second-accent-color;
-}
-
 .realHeadshotImg {
   height: 500px;
-}
-.sewistLink {
-  background-color: $fourth-accent-color;
 }
 
 .summary, .summaryContainer {
@@ -161,7 +168,6 @@ button {
   height: 200px;
   width:200px;
   justify-content: center;
-  margin-left: 1.5em;
   &:hover {
     color: white;
     cursor: pointer;
@@ -171,9 +177,6 @@ button {
 ul {
   display: grid;
   grid-template-columns: repeat(3, 3);
-}
-.vocalLink {
-  background-color: $third-accent-color;
 }
 
 
