@@ -1,6 +1,5 @@
 import React from 'react';
 import Github from '../Github/Github';
-import Twitter from '../Twitter/Twitter';
 import Instagram from '../Instagram/Instagram';
 import Email from '../Email/Email';
 
@@ -12,10 +11,6 @@ export const Footer = () => {
           <a href='https://github.com/conconartist' className='iconContainer'>
             <Github />
             <p className='ghTitle'>GitHub</p>
-          </a>
-          <a href='https://twitter.com/conconartist' className='iconContainer'>
-            <Twitter />
-            <p className='twitterTitle'>Twitter</p>
           </a>
           <a href='https://www.instagram.com/conconartist' className='iconContainer'>
             <Instagram />
