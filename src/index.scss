@@ -50,13 +50,16 @@ code {
 }
 
 h1 {
-  color: $heading-text-color;
-  font-size: 55px;
+  color: $light-accent-color;
+  font-size: 7em;
   margin: 0;
   margin-bottom: 0.2em;
   padding: 0.3em;
   text-align: center;
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
