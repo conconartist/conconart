@@ -23,6 +23,10 @@ main {
   padding: 5em;
 }
 
+.siteTitle a{
+  color: $light-accent-color;
+}
+
 .aboutMe {
   align-items: center;
   display: flex;
@@ -47,7 +51,8 @@ button {
 .buttonOne {
   align-items: center;
   background-color: $fifth-accent-color;
-  border-radius: 8px;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 25px;
   color: black;
   display: flex;
   font-size: 1.2em;
@@ -66,7 +71,8 @@ button {
 .buttonTwo {
   align-items: center;
   background-color: $sixth-accent-color;
-  border-radius: 8px;
+  box-shadow: 10px 5px 5px black;
+  border-radius: 25px;
   color: black;
   display: flex;
   font-size: 1.2em;
@@ -111,7 +117,10 @@ ul.linkContainer {
   gap:2em;
 }
 
-ul.linkContainer li{border-radius:50%}
+ul.linkContainer li{
+  border-radius:50%;
+  box-shadow: 10px 5px 5px black;
+}
 
 ul.linkContainer li:first-child{
   background-color: $first-accent-color;
@@ -153,6 +162,7 @@ ul.linkContainer li:nth-child(4) {
   margin: 3.2em;
   padding: 2em;
   max-width: 800px;
+  box-shadow: 10px 5px 5px black;
 }
 
 .summaryHeader {
@@ -165,10 +175,13 @@ ul.linkContainer li:nth-child(4) {
   height: 200px;
   width:200px;
   justify-content: center;
+  padding: 1em;
+  text-align: center;
   &:hover {
     color: white;
     cursor: pointer;
   }
+
 }
 
 ul {

@@ -28,7 +28,7 @@ body, html {
     font-family: 'Roboto Condensed', Sans-Serif;
     font-size: 35px;
     font-family: 'Cabin', Sans-Serif;
-    font-size: 16px;
+    font-size: 18px;
     padding-bottom: 8em;
   }
 
@@ -49,8 +49,9 @@ code {
     monospace;
 }
 
-h1 {
+h1{
   color: $light-accent-color;
+  text-shadow: 1px 1px 2px black;
   font-size: 7em;
   margin: 0;
   margin-bottom: 0.2em;

@@ -35,7 +35,7 @@ const App = () => {
   return (
     <>
     <header>
-      <h1><a href="/">CONCONART</a></h1>
+      <h1 className='siteTitle'><a href="/">CONCONART</a></h1>
       <div className='summaryContainer'>
         <p><b>Connie Hong</b> is a software developer, vocalist, songwriter, teacher, lifelong learner, and creative thinker.</p>
       </div>
