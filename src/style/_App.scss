@@ -11,7 +11,7 @@ a {
 header {
   justify-content: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: rgba($primary-background-color, 0.5);
 
 }
@@ -24,7 +24,7 @@ main {
 }
 
 .siteTitle a{
-  color: $light-accent-color;
+  color: $light-background;
 }
 
 .aboutMe {
@@ -154,7 +154,7 @@ ul.linkContainer li:nth-child(4) {
 
 .summary, .summaryContainer {
   align-items: center;
-  background-color: $light-accent-color;
+  background-color: $light-background;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
@@ -169,6 +169,9 @@ ul.linkContainer li:nth-child(4) {
   padding: 0.5em;
 }
 
+.headingText {
+  text-align: center;
+}
 .titleContainer {
   align-items: center;
   display: flex;

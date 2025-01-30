@@ -34,7 +34,7 @@ const App = () => {
     <>
     <header>
       <h1 className='siteTitle'><a href="/">CONCONART</a></h1>
-      <div className='summaryContainer'>
+      <div className='headingText'>
         <p><b>Connie Hong</b> is a software developer, vocalist, songwriter, teacher, lifelong learner, and creative thinker.</p>
       </div>
     </header>
@@ -48,7 +48,7 @@ const App = () => {
               <ul className='linkContainer'>
                 <li className='devLink'>
                   <div className='titleContainer' onClick={() => toggleSection('dev')}>
-                    <h2 className='mainPageLink'>Software Engineer</h2>
+                    <h2 className='mainPageLink'>Developer</h2>
                   </div>
                 </li>
                 <li className='musicianLink'>
