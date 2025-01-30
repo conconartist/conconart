@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // width: 100vw;
   }
 
 @mixin buttonStyle() {
@@ -28,7 +27,7 @@
   height: 40px;
   &:hover {
     cursor: pointer;
-    fill: $fifth-accent-color;
+    fill: $dark-third-accent;
   }
 }
 
