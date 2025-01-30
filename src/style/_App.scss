@@ -20,7 +20,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2em;
+  padding: 1em;
 }
 
 .siteTitle a{
@@ -117,11 +117,6 @@ ul.linkContainer {
   gap:2em;
 }
 
-ul.linkContainer li{
-  border-radius:50%;
-  box-shadow: 10px 5px 5px black;
-}
-
 ul.linkContainer li:first-child{
   background-color: $first-accent-color;
 }
@@ -133,6 +128,17 @@ ul.linkContainer li:nth-child(3) {
 }
 ul.linkContainer li:nth-child(4) {
   background-color: $fourth-accent-color;
+}
+
+ul.linkContainer li{
+  border-radius:50%;
+  box-shadow: 10px 5px 5px black;
+  &:hover {
+    background-color: $main-text-color;
+  }
+  &:active {
+    background-color: $light-background;
+  }
 }
 
 .linkSection {
@@ -192,8 +198,11 @@ ul.linkContainer li:nth-child(4) {
   padding: 1em;
   text-align: center;
   &:hover {
-    color: white;
     cursor: pointer;
+    color: $light-background;
+  }
+  &:active {
+    color: $main-text-color;
   }
 
 }

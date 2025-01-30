@@ -1,18 +1,16 @@
 import React, {useState} from 'react';
 import { Route, Link } from 'react-router-dom';
+import { Header } from './Header/Header.js';
 import { Portfolio } from './Portfolio/Portfolio';
 import { Discography } from './Discography/Discography';
 import { Licensing } from './Licensing/Licensing';
 import { Press } from './Press/Press';
 import { DevSummary } from './DevSummary/DevSummary';
 import { MusicianSummary } from './MusicianSummary/MusicianSummary';
-import { Footer } from './Footer/Footer';
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
 import OutArrow from './OutArrow/OutArrow.js';
 import resume from './assets/ConnieHongSoftwareEngineer.pdf';
-import Github from './Github/Github';
-import Instagram from './Instagram/Instagram';
 
 const App = () => {
   const [openSection, setOpenSection] = useState(null);
@@ -40,24 +38,7 @@ const App = () => {
 
   return (
     <>
-    <header>
-      <div class="topHeaderRow">
-        <h1 className='siteTitle'><a href="/">CONCONART</a></h1>
-        <div class="socialIconContainer">
-          <a href='https://github.com/conconartist' className='iconContainer'>
-            <Github />
-            <p className='ghTitle'>GitHub</p>
-          </a>
-          <a href='https://www.instagram.com/conconartist' className='iconContainer'>
-            <Instagram />
-            <p className='instaTitle'>Instagram</p>
-          </a>
-        </div>
-      </div>
-      <div className='headingText'>
-        <p><b>Connie Hong</b> is a software developer, vocalist, songwriter, teacher, lifelong learner, and creative thinker.</p>
-      </div>
-    </header>
+    <Header />
       <main>
       <Route
         exact
@@ -201,7 +182,6 @@ const App = () => {
           )
         }}
       />
-      <Footer />
     </main>
     </>
   );
