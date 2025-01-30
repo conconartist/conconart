@@ -1,6 +1,7 @@
 .contactContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap:10px;
   width: 40vw;
 }
 
@@ -40,11 +41,14 @@
 }
 
 .summaryText {
-    text-align: -webkit-center;
+  text-align: -webkit-center;
 }
 
+.footerContainer {
+
+}
 @media screen and (max-width: 650px) {
-    
+
     .contactContainer {
         align-items: center;
         flex-direction: column;

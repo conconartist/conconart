@@ -5,18 +5,9 @@ import Email from '../Email/Email';
 
 export const Footer = () => {
   return (
-    <section className='summaryContainer'>
+    <section className='footerContainer'>
       <div className='contactContainer'>
-        <div className='socialMediaContainer'>
-          <a href='https://github.com/conconartist' className='iconContainer'>
-            <Github />
-            <p className='ghTitle'>GitHub</p>
-          </a>
-          <a href='https://www.instagram.com/conconartist' className='iconContainer'>
-            <Instagram />
-            <p className='instaTitle'>Instagram</p>
-          </a>
-        </div>
+        
         <a href="mailto:conconart.info@gmail.com" className='iconContainer'>
             <Email />
             <p className='emailTitle'>conconart.info@gmail.com</p>

@@ -11,6 +11,8 @@ import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
 import OutArrow from './OutArrow/OutArrow.js';
 import resume from './assets/ConnieHongSoftwareEngineer.pdf';
+import Github from './Github/Github';
+import Instagram from './Instagram/Instagram';
 
 const App = () => {
   const [openSection, setOpenSection] = useState(null);
@@ -33,7 +35,19 @@ const App = () => {
   return (
     <>
     <header>
-      <h1 className='siteTitle'><a href="/">CONCONART</a></h1>
+      <div class="topHeaderRow">
+        <h1 className='siteTitle'><a href="/">CONCONART</a></h1>
+        <div class="socialIconContainer">
+          <a href='https://github.com/conconartist' className='iconContainer'>
+            <Github />
+            <p className='ghTitle'>GitHub</p>
+          </a>
+          <a href='https://www.instagram.com/conconartist' className='iconContainer'>
+            <Instagram />
+            <p className='instaTitle'>Instagram</p>
+          </a>
+        </div>
+      </div>
       <div className='headingText'>
         <p><b>Connie Hong</b> is a software developer, vocalist, songwriter, teacher, lifelong learner, and creative thinker.</p>
       </div>
@@ -131,10 +145,9 @@ const App = () => {
                   src={headshotReal}
                   alt='Connie Hong sitting in a chair and smiling'>
                 </img>
-                <h4 className="summaryHeader">I love to find beauty and artistic expression in everything I do, so programming is no exception.</h4>
-                  <p>Recent world and life events afforded me the opportunity to begin a career in software development to explore my interests and curiosities, while helping my community (and beyond) in new ways through software engineering and frontend development.
-                  I'm passionate about sustainable fashion and minimal waste-living (especially in the realm of slow-fashion). I strive to cultivate an environment of creativity and responsible-living where I can help better the world, while pursuing a beautiful life full of music and art.</p>
-                  <p>My interests include design, crafts, sewing, travel, sitting in coffee shops, and taking my dogs anywhere I can bring them with me.</p>
+                <h4 className="summaryHeader">I strive to find beauty and artistic expression in everything I do.</h4>
+                  <p>Experienced musician, singer-songwriter, and creative thinker. I love that I am able to explore my interests and curiosities, while helping my community (and beyond), through software engineering. Past endeavors in design, crafts, and sewing have led to a passion for sustainable and minimal waste-living (especially in the realm of slow-fashion) and content creation. These passions have helped hone an intuitive knack for digital marketing, using social media and SEO practices. I strive to cultivate a life of creativity where I can also help better the world working with a company that shares my values of authenticity and building relationships through creativity and collaboration.</p>
+                  <p>My interests include thrifting, travel, sitting in coffee shops, and taking my dogs anywhere I can bring them with me.</p>
                   <p>I collect mugs (they're the best souvenirs), things my friends made, stickers, and mechanical keyboards.</p>
               </section>
               </div>

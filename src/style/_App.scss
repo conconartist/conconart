@@ -20,7 +20,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5em;
+  padding: 2em;
 }
 
 .siteTitle a{
@@ -172,6 +172,17 @@ ul.linkContainer li:nth-child(4) {
 .headingText {
   text-align: center;
 }
+
+.topHeaderRow {
+  display: flex;
+  gap: 10em;
+}
+
+.socialIconContainer {
+  display: flex;
+  gap: 1em;
+}
+
 .titleContainer {
   align-items: center;
   display: flex;
