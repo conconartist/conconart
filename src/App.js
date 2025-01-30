@@ -16,6 +16,7 @@ import Instagram from './Instagram/Instagram';
 
 const App = () => {
   const [openSection, setOpenSection] = useState(null);
+  const [openAboutMeSection, setOpenAboutMeSection] = useState(false);
 
   const toggleSection = (section) => {
     if(section === openSection) {
@@ -29,9 +30,14 @@ const App = () => {
     }
   }
 
-  const displaySection = (type) => {
-
+  const toggleAboutMeSection = () => {
+    if(openAboutMeSection === false) {
+      setOpenAboutMeSection(true)
+    } else {
+      setOpenAboutMeSection(false)
+    }
   }
+
   return (
     <>
     <header>
@@ -136,9 +142,12 @@ const App = () => {
                   </div>
                 </section>
               }
-
-              <div className='aboutMe'>
-                <section className='summary'>
+              <div className='aboutMe' onClick={() => toggleAboutMeSection()}>
+                {!openAboutMeSection &&
+                  <Headshot />
+                }
+                {openAboutMeSection &&
+                  <section className='summary'>
                 <h3>I'm Connie Hong (she/her).</h3>
                 <img
                   className='realHeadshotImg'
@@ -149,7 +158,8 @@ const App = () => {
                   <p>Experienced musician, singer-songwriter, and creative thinker. I love that I am able to explore my interests and curiosities, while helping my community (and beyond), through software engineering. Past endeavors in design, crafts, and sewing have led to a passion for sustainable and minimal waste-living (especially in the realm of slow-fashion) and content creation. These passions have helped hone an intuitive knack for digital marketing, using social media and SEO practices. I strive to cultivate a life of creativity where I can also help better the world working with a company that shares my values of authenticity and building relationships through creativity and collaboration.</p>
                   <p>My interests include thrifting, travel, sitting in coffee shops, and taking my dogs anywhere I can bring them with me.</p>
                   <p>I collect mugs (they're the best souvenirs), things my friends made, stickers, and mechanical keyboards.</p>
-              </section>
+                  </section>
+                }
               </div>
           </>
           )
