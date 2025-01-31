@@ -8,17 +8,17 @@ export const Header = () => {
     <header>
       <div class="topHeaderRow">
         <h1 className='siteTitle'><a href="/">CONCONART</a></h1>
-        <div class="socialIconContainer">
-          <a href='https://github.com/conconartist' className='iconContainer'>
-            <Github />
-          </a>
-          <a href='https://www.instagram.com/conconartist' className='iconContainer'>
-            <Instagram />
-          </a>
-          <a href="mailto:connie.hae.hong@gmail.com" className='iconContainer'>
-            <Email />
-          </a>
-        </div>
+          <div class="socialIconContainer">
+            <a href='https://github.com/conconartist' className='iconContainer'>
+              <Github />
+            </a>
+            <a href='https://www.instagram.com/conconartist' className='iconContainer'>
+              <Instagram />
+            </a>
+            <a href="mailto:connie.hae.hong@gmail.com" className='iconContainer'>
+              <Email />
+            </a>
+          </div>
       </div>
       <div className='headingText'>
         <p><b>Connie Hong</b> is a software developer, vocalist, songwriter, teacher, lifelong learner, and creative thinker.</p>

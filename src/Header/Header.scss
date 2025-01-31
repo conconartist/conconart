@@ -14,7 +14,7 @@
 
 .ghTitle {
   @include iconText();
-  color: $dark-third-accent;
+  color: $first-accent-color;
 }
 
 .twitterTitle {
@@ -24,7 +24,7 @@
 
 .instaTitle {
   @include iconText();
-  color: $dark-second-accent;
+  color: $third-accent-color;
 }
 
 .emailTitle {
@@ -44,9 +44,6 @@
   text-align: -webkit-center;
 }
 
-.footerContainer {
-
-}
 @media screen and (max-width: 650px) {
 
     .contactContainer {

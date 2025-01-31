@@ -12,7 +12,7 @@
 @import './Instagram/Instagram.scss';
 @import './Github/Github.scss';
 @import './Email/Email.scss';
-@import './Footer/Footer.scss';
+@import './Header/Header.scss';
 @import './Arrow/Arrow.scss';
 @import './MusicianSummary/MusicianSummary.scss';
 @import './BackButton/BackButton.scss';
@@ -20,7 +20,7 @@
 
 body, html {
     background-color: $primary-background-color;
-    // background-image: url("./background.PNG");
+    background-image: url(./colorStreak.PNG);
     color: $main-text-color;
     display: flex;
     flex-direction: column;
