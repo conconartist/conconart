@@ -1,14 +1,15 @@
 @import '../style/variables';
 
 .paintedHeadshot {
-    border-radius: 10px;
+    border-radius: 25px;
     border-width: 10px;
     cursor: pointer;
+    padding:1em;
     margin-bottom: 0.5em;
     margin-top: 2.5em;
     width: 450px;
     height: 450px;
-    border: 10px solid $primary-background-color;
+    border: 10px solid $transparent-background;
 
 
 

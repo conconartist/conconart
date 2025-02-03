@@ -48,6 +48,9 @@ button {
 
 .buttonContainer {
   margin: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .buttonOne {
