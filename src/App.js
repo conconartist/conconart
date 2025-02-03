@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Route, Link } from 'react-router-dom';
 import { Header } from './Header/Header.js';
 import { Portfolio } from './Portfolio/Portfolio';
+import { Projects } from './Projects/Projects';
 import { Discography } from './Discography/Discography';
 import { Licensing } from './Licensing/Licensing';
 import { Press } from './Press/Press';
@@ -10,7 +11,6 @@ import { MusicianSummary } from './MusicianSummary/MusicianSummary';
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
 import OutArrow from './OutArrow/OutArrow.js';
-import resume from './assets/ConnieHongSoftwareEngineer.pdf';
 
 const App = () => {
   const [openSection, setOpenSection] = useState(null);
@@ -65,20 +65,7 @@ const App = () => {
               </ul>
               {openSection === 'dev' &&
                 <section className='linkSection'>
-                  <div className='summaryContainer'>
-                    <a href={resume}>
-                        <p className='buttonTwo'>Resume <OutArrow /></p>
-                      </a>
-                    <DevSummary />
-                    <div className='buttonContainer'>
-                      <Link to='/portfolio'>
-                        <p className='buttonOne'>Portfolio</p>
-                      </Link>
-                      <a href="https://www.conconartdigital.com">
-                        <p className='buttonOne'>Conconart Digital <OutArrow /></p>
-                      </a>
-                    </div>
-                  </div>
+                  <DevSummary />
                 </section>
               }
               {openSection === 'music' &&
@@ -152,6 +139,15 @@ const App = () => {
         render={ () => {
           return (
             <Portfolio />
+          )
+        }}
+      />
+      <Route
+        exact
+        path='/projects'
+        render={ () => {
+          return (
+            <Projects />
           )
         }}
       />

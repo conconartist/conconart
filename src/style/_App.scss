@@ -3,8 +3,10 @@
 
 a {
   text-decoration: none;
+  color: $sixth-accent-color;
+  font-weight:500;
   &:visited {
-    color: $second-accent-color;
+    color: $sixth-accent-color;
   }
 }
 
@@ -12,7 +14,7 @@ header {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  background: rgba($primary-background-color, 0.5);
+  background: rgba($primary-background-color, 0.6);
 
 }
 
@@ -50,10 +52,10 @@ button {
 
 .buttonOne {
   align-items: center;
-  background-color: $fifth-accent-color;
+  background-color: $sixth-accent-color;
   box-shadow: 10px 5px 5px black;
   border-radius: 25px;
-  color: black;
+  color: #000;
   display: flex;
   font-size: 1.2em;
   height: 3vh;
@@ -70,10 +72,10 @@ button {
 
 .buttonTwo {
   align-items: center;
-  background-color: $sixth-accent-color;
+  background-color: $fourth-accent-color;
   box-shadow: 10px 5px 5px black;
   border-radius: 25px;
-  color: black;
+  color: #fff;
   display: flex;
   font-size: 1.2em;
   height: 3vh;
@@ -160,7 +162,7 @@ ul.linkContainer li{
 
 .summary, .summaryContainer {
   align-items: center;
-  background-color: $light-background;
+  background-color: $transparent-background;
   border-radius: 30px;
   display: flex;
   flex-direction: column;
