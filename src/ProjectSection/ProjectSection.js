@@ -9,14 +9,14 @@ import tomatillosdemo from '../assets/tomatillosdemo.gif';
 import BackButton from '../BackButton/BackButton';
 import OutArrow from '../OutArrow/OutArrow';
 
-export const Portfolio = () => {
+export const ProjectSection = () => {
 
     return (
         <>
           <div className='linkedSectionTitle'>
             <div className='categoryTitleContainer'>
               <BackButton />
-              <h2>Portfolio</h2>
+              <h2>Projects</h2>
             </div>
           </div>
           <DevSummary />
@@ -41,13 +41,13 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/face-it'>
+                <a href='https://github.com/conconartist/face-it' target='_blank'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                     <OutArrow />
                   </button>
                 </a>
-                <a href='https://face-it-blue.vercel.app/'>
+                <a href='https://face-it-blue.vercel.app/' target='_blank'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                     <OutArrow />
@@ -78,13 +78,13 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/book-worm-fe'>
+                <a href='https://github.com/conconartist/book-worm-fe' target='_blank'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                     <OutArrow />
                   </button>
                 </a>
-                <a href='https://book-worm-2.herokuapp.com/home'>
+                <a href='https://book-worm-2.herokuapp.com/home' target='_blank'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                     <OutArrow />
@@ -111,13 +111,13 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/lyric-lava'>
+                <a href='https://github.com/conconartist/lyric-lava' target='_blank'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                     <OutArrow />
                   </button>
                 </a>
-                <a href='https://lyric-lava.vercel.app/'>
+                <a href='https://lyric-lava.vercel.app/' target='_blank'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                     <OutArrow />
@@ -140,13 +140,13 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/swanson-sayings'>
+                <a href='https://github.com/conconartist/swanson-sayings' target='_blank'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                     <OutArrow />
                   </button>
                 </a>
-                <a href='https://swanson-says.herokuapp.com/'>
+                <a href='https://swanson-says.herokuapp.com/' target='_blank'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                     <OutArrow />
@@ -174,13 +174,13 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/rancid-tomatillos'>
+                <a href='https://github.com/conconartist/rancid-tomatillos' target='_blank'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                     <OutArrow />
                   </button>
                 </a>
-                <a href='https://rancid-tomatillos-lake.vercel.app/'>
+                <a href='https://rancid-tomatillos-lake.vercel.app/' target='_blank'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                     <OutArrow />

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Route, Link } from 'react-router-dom';
 import { Header } from './Header/Header.js';
 import { Portfolio } from './Portfolio/Portfolio';
-import { Projects } from './Projects/Projects';
+import { ProjectSection } from './ProjectSection/ProjectSection.js';
 import { Discography } from './Discography/Discography';
 import { Licensing } from './Licensing/Licensing';
 import { Press } from './Press/Press';
@@ -147,7 +147,7 @@ const App = () => {
         path='/projects'
         render={ () => {
           return (
-            <Projects />
+            <ProjectSection />
           )
         }}
       />
