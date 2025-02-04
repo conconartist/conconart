@@ -3,19 +3,11 @@
 
 a {
   text-decoration: none;
-  color: $sixth-accent-color;
+  color: $dark-fifth-accent;
   font-weight:500;
   &:visited {
-    color: $sixth-accent-color;
+    color: $dark-fifth-accent;
   }
-}
-
-header {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  background: rgba($primary-background-color, 0.6);
-
 }
 
 main {
@@ -23,10 +15,6 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 1em;
-}
-
-.siteTitle a{
-  color: $light-background;
 }
 
 .aboutMe {
@@ -112,39 +100,6 @@ button {
   flex-direction: column;
   justify-content: center;
 }
-ul.linkContainer {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  list-style-type: none;
-  padding:0;
-  gap:2em;
-}
-
-ul.linkContainer li:first-child{
-  background-color: $first-accent-color;
-}
-ul.linkContainer li:nth-child(2) {
-  background-color: $second-accent-color;
-}
-ul.linkContainer li:nth-child(3) {
-  background-color: $third-accent-color;
-}
-ul.linkContainer li:nth-child(4) {
-  background-color: $fourth-accent-color;
-}
-
-ul.linkContainer li{
-  border-radius:50%;
-  box-shadow: 10px 5px 5px black;
-  &:hover {
-    background-color: $main-text-color;
-  }
-  &:active {
-    background-color: $light-background;
-  }
-}
 
 .linkSection {
   align-items: center;
@@ -178,38 +133,6 @@ ul.linkContainer li{
 
 .summaryHeader {
   padding: 0.5em;
-}
-
-.headingText {
-  text-align: center;
-}
-
-.topHeaderRow {
-  display: flex;
-  gap: 10em;
-}
-
-.socialIconContainer {
-  display: flex;
-  gap: 1em;
-}
-
-.titleContainer {
-  align-items: center;
-  display: flex;
-  height: 200px;
-  width:200px;
-  justify-content: center;
-  padding: 1em;
-  text-align: center;
-  &:hover {
-    cursor: pointer;
-    color: $light-background;
-  }
-  &:active {
-    color: $main-text-color;
-  }
-
 }
 
 ul {

@@ -1,0 +1,66 @@
+@import '../variables';
+
+nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding:0 4% 0 1%;
+  gap:1em;
+}
+
+nav li:first-child{
+  background-color: $transparent-background;
+  &:hover {
+    background-color: $first-accent-color;
+  }
+}
+nav li:nth-child(2) {
+  background-color: $transparent-background;
+  &:hover {
+    background-color: $second-accent-color;
+  }
+}
+nav li:nth-child(3) {
+  background-color: $transparent-background;
+  &:hover {
+    background-color: $third-accent-color;
+  }
+}
+nav li:nth-child(4) {
+  background-color: $transparent-background;
+  &:hover {
+    background-color: $fourth-accent-color;
+  }
+}
+
+nav li{
+  border-radius:50%;
+  box-shadow: 10px 5px 5px black;
+  &:hover {
+    background-color: $main-text-color;
+  }
+  &:active {
+    background-color: $light-background;
+  }
+}
+
+nav a, nav a:visited {color: $dark-second-accent;}
+
+.titleContainer {
+  align-items: center;
+  display: flex;
+  height: 150px;
+  width: 150px;
+  justify-content: center;
+  padding: 1em;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+    color: $light-background;
+  }
+  &:active {
+    color: $main-text-color;
+  }
+}

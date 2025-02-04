@@ -8,25 +8,12 @@ import { Licensing } from './Licensing/Licensing';
 import { Press } from './Press/Press';
 import { DevSummary } from './DevSummary/DevSummary';
 import { MusicianSummary } from './MusicianSummary/MusicianSummary';
+import { MakerSummary } from './MakerSummary/MakerSummary.js';
 import Headshot from './Headshot/Headshot.js';
 import headshotReal from './headshotReal.jpg';
-import OutArrow from './OutArrow/OutArrow.js';
 
 const App = () => {
-  const [openSection, setOpenSection] = useState(null);
   const [openAboutMeSection, setOpenAboutMeSection] = useState(false);
-
-  const toggleSection = (section) => {
-    if(section === openSection) {
-      setOpenSection(null)
-    } else if(section === 'dev') {
-      setOpenSection('dev')
-    } else if(section === 'music') {
-      setOpenSection('music')
-    } else if(section === 'maker') {
-      setOpenSection('maker')
-    }
-  }
 
   const toggleAboutMeSection = () => {
     if(openAboutMeSection === false) {
@@ -46,48 +33,6 @@ const App = () => {
         render={ () => {
           return (
             <>
-              <ul className='linkContainer'>
-                <li className='devLink'>
-                  <div className='titleContainer' onClick={() => toggleSection('dev')}>
-                    <h2 className='mainPageLink'>Developer</h2>
-                  </div>
-                </li>
-                <li className='musicianLink'>
-                  <div className='titleContainer' onClick={() => toggleSection('music')}>
-                    <h2 className='mainPageLink'>Musician</h2>
-                  </div>
-                </li>
-                <li className='sewistLink'>
-                  <div className='titleContainer' onClick={() => toggleSection('maker')}>
-                    <h2 className='mainPageLink'>Maker</h2>
-                  </div>
-                </li>
-              </ul>
-              {openSection === 'dev' &&
-                <section className='linkSection'>
-                  <DevSummary />
-                </section>
-              }
-              {openSection === 'music' &&
-                <section className='linkSection'>
-                  <div className='summaryContainer'>
-                    <MusicianSummary />
-                    
-                  </div>
-                </section>
-              }
-              {openSection === 'maker' &&
-                <section className='linkSection'>
-                  <div className='summaryContainer'>
-                    <p>As a sewist, Connie learned to sew at <a href='http://winter-session.com'>Winter Session</a>, making canvas and leather goods.  Eventually, her sewing hobby turned to making clothes and posts her makes on social media. Most recently, she's partnered with ARC Thrift Stores to showcase repurposed fashion. She's passionate about sustainable fashion, having attended the Sustainable Fashion Forum Conference and is a Remake Ambassador.</p>
-                    <div className='buttonContainer'>
-                      <a href='https://www.instagram.com/concansew/' target='_blank'>
-                        <p className='buttonTwo'>ConCanSew Instagram <OutArrow /></p>
-                      </a>
-                    </div>
-                  </div>
-                </section>
-              }
               <div className='aboutMe' onClick={() => toggleAboutMeSection()}>
                 {!openAboutMeSection &&
                   <Headshot />
@@ -107,7 +52,34 @@ const App = () => {
                   </section>
                 }
               </div>
-          </>
+            </>
+          )
+        }}
+      />
+      <Route
+        exact
+        path='/dev'
+        render={ () => {
+          return (
+            <DevSummary />
+          )
+        }}
+      />
+      <Route
+        exact
+        path='/music'
+        render={ () => {
+          return (
+            <MusicianSummary />
+          )
+        }}
+      />
+      <Route
+        exact
+        path='/maker'
+        render={ () => {
+          return (
+            <MakerSummary />
           )
         }}
       />
