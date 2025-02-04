@@ -1,11 +1,11 @@
 import React from 'react';
 import { DevSummary } from '../DevSummary/DevSummary';
 import { HomeButton } from '../HomeButton/HomeButton';
-import bookwormintro from '../assets/bookwormintro.gif';
-import lyriclavademo from '../assets/lyriclavademo.gif';
-import faceitdemo from '../assets/faceitdemo.gif';
-import swansondemo from '../assets/swansondemo.gif';
-import tomatillosdemo from '../assets/tomatillosdemo.gif';
+import bookwormintro from '../assets/images/bookwormintro.gif';
+import lyriclavademo from '../assets/images/lyriclavademo.gif';
+import faceitdemo from '../assets/images/faceitdemo.gif';
+import swansondemo from '../assets/images/swansondemo.gif';
+import tomatillosdemo from '../assets/images/tomatillosdemo.gif';
 import BackButton from '../BackButton/BackButton';
 import OutArrow from '../OutArrow/OutArrow';
 
