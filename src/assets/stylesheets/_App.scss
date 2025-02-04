@@ -34,9 +34,17 @@ button {
   border: none;
 }
 
-.buttonContainer {
+.buttonContainerFlex {
   margin: 1em;
   display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.buttonContainerGrid{
+  margin: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   flex-direction: column;
   gap: 5px;
 }
@@ -44,7 +52,7 @@ button {
 .buttonOne {
   align-items: center;
   background-color: $sixth-accent-color;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 5px 5px 10px black;
   border-radius: 25px;
   color: #000;
   display: flex;
@@ -54,7 +62,7 @@ button {
   margin: 0.3em;
   padding: 0.3em;
   width: 60vw;
-  max-width:700px;
+  max-width:400px;
   &:hover {
     background-color: black;
     color: white;
@@ -64,7 +72,7 @@ button {
 .buttonTwo {
   align-items: center;
   background-color: $fourth-accent-color;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 5px 5px 10px black;
   border-radius: 25px;
   color: #fff;
   display: flex;
@@ -74,7 +82,7 @@ button {
   margin: 0.3em;
   padding: 0.3em;
   width: 60vw;
-  max-width: 700px;;
+  max-width: 400px;
   &:hover {
     background-color: black;
     color: white;
@@ -107,7 +115,8 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100vw;
+  padding: 1em;
+  width: 90%;
 }
 
 .mainPageLink {
@@ -127,7 +136,7 @@ button {
   justify-content: center;
   margin: 0;
   padding: 2em;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 5px 5px 10px black;
 }
 
 .summaryHeader {

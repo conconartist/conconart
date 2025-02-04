@@ -19,9 +19,7 @@ export const ProjectSection = () => {
               <h2>Projects</h2>
             </div>
           </div>
-          <DevSummary />
           <section className='linkedSection'>
-
             <div className='projectSection'>
               <h3 className='projectTitle'>FaceIt</h3>
               <img className='projectDemo' src={faceitdemo} alt='FaceIt app demo'></img>

@@ -1,5 +1,4 @@
 import React from 'react';
-import { DevSummary } from '../DevSummary/DevSummary';
 import { HomeButton } from '../HomeButton/HomeButton';
 import bookwormintro from '../assets/images/bookwormintro.gif';
 import lyriclavademo from '../assets/images/lyriclavademo.gif';
@@ -19,9 +18,7 @@ export const Portfolio = () => {
               <h2>Portfolio</h2>
             </div>
           </div>
-          <DevSummary />
           <section className='linkedSection'>
-
             <div className='projectSection'>
               <h3 className='projectTitle'>FaceIt</h3>
               <img className='projectDemo' src={faceitdemo} alt='FaceIt app demo'></img>

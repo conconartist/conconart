@@ -14,13 +14,13 @@ export const Header = () => {
         <p><b>Connie Hong</b> is a software developer, vocalist, songwriter, teacher, lifelong learner, and creative thinker.</p>
       </div>
           <div className="socialIconContainer">
-            <a href='https://github.com/conconartist' className='iconContainer'>
+            <a href='https://github.com/conconartist' alt='find me on github as conconartist' className='iconContainer' target='_blank' rel='noreferrer'>
               <Github />
             </a>
-            <a href='https://www.instagram.com/conconartist' className='iconContainer'>
+            <a href='https://www.instagram.com/conconartist' alt='find me on instagram under conconartist' className='iconContainer' target='_blank' rel='noreferrer'>
               <Instagram />
             </a>
-            <a href="mailto:connie.hae.hong@gmail.com" className='iconContainer'>
+            <a href="mailto:connie.hae.hong@gmail.com" alt='email me at connie.hae.hong@gmail.com' className='iconContainer' target='_blank' rel='noreferrer'>
               <Email />
             </a>
           </div>
