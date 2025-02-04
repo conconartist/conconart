@@ -19,7 +19,7 @@ const Headshot = () => {
             <ellipse cx="823.5" cy="626.5" rx="25.5" ry="22.5" fill="#593B2D"/>
             <path d="M587.038 653.502L525 621L489 616L440 638L401 648L462 621L517 609L555 629L587.038 653.502Z" fill="#057196"/>
             <path d="M794 617.51L765.9 648.51L798 622L831 605L863 605L919 622L889 597L863 597L831 597L794 617.51Z" fill="#057196"/>
-            <path d="M910 625C914.339 623.307 916.358 620.821 920 619" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M910 625C914.339 623.307 916.358 620.821 920 619" stroke="black" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
     )
 }

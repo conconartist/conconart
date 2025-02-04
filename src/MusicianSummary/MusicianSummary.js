@@ -18,13 +18,13 @@ export const MusicianSummary = () => {
             <Link to='/press'>
               <p className='buttonOne'>Press</p>
             </Link>
-            <a href='https://www.ivorycircle.com/' target='_blank'>
+            <a href='https://www.ivorycircle.com/' target='_blank' rel='noreferrer'>
               <p className='buttonTwo'>Ivory Circle <OutArrow /></p>
             </a>
-            <a href='https://www.fairelle.me/' target='_blank'>
+            <a href='https://www.fairelle.me/' target='_blank' rel='noreferrer'>
               <p className='buttonTwo'>Fair Elle <OutArrow /></p>
             </a>
-            <a href='https://conconartstudio.com' target='_blank'>
+            <a href='https://conconartstudio.com' target='_blank' rel='noreferrer'>
               <p className='buttonTwo'>Conconart Studio <OutArrow /></p>
             </a>
             <p>As a songwriter, Connie has been co-writer for the band Ivory Circle since 2013, which has garnered local and national recognition with placements on Netflix, CW (Charmed), VH1 (Couples Therapy) and Showtime (The Affair promotional spot), radio airplay (including OpenAir CPR, KBCO and KTCL in the Denver-metro area), and press in several publications for her dynamic vocal abilities and heartfelt songs.</p>

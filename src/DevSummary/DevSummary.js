@@ -7,7 +7,7 @@ export const DevSummary = () => {
     return (
       <section className='devContainer linkSection'>
         <div className="summaryContainer">
-          <a href={resume} target='_blank'>
+          <a href={resume} target='_blank' rel='noreferrer'>
             <p className='buttonTwo'>Resume</p>
           </a>
           <p>Connie Hong is an experienced developer, specializing in front end engineering and the user experience with a keen eye for design. She loves a collaborative environment but also enjoys solitary work and getting in the "zone".  She's a proud graduate from <a href='https://turing.edu/'>Turing School of Software and Design</a> with a certification in Front-End Engineering.
@@ -38,9 +38,9 @@ export const DevSummary = () => {
             <Link to='/portfolio'>
               <p className='buttonOne'>Portfolio</p>
             </Link>
-            <a href='https://www.conconartdigital.com' target='_blank'>
+            {/* <a href='https://www.conconartdigital.com' target='_blank' rel='noreferrer'>
               <p className='buttonOne'>Conconart Digital</p>
-            </a>
+            </a> */}
             <Link to='/projects'>
               <p className='buttonOne'>Projects</p>
             </Link>

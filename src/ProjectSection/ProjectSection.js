@@ -41,13 +41,13 @@ export const ProjectSection = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/face-it' target='_blank'>
+                <a href='https://github.com/conconartist/face-it' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                     <OutArrow />
                   </button>
                 </a>
-                <a href='https://face-it-blue.vercel.app/' target='_blank'>
+                <a href='https://face-it-blue.vercel.app/' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                     <OutArrow />
@@ -78,13 +78,13 @@ export const ProjectSection = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/book-worm-fe' target='_blank'>
+                <a href='https://github.com/conconartist/book-worm-fe' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                     <OutArrow />
                   </button>
                 </a>
-                <a href='https://book-worm-2.herokuapp.com/home' target='_blank'>
+                <a href='https://book-worm-2.herokuapp.com/home' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                     <OutArrow />
@@ -111,13 +111,13 @@ export const ProjectSection = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/lyric-lava' target='_blank'>
+                <a href='https://github.com/conconartist/lyric-lava' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                     <OutArrow />
                   </button>
                 </a>
-                <a href='https://lyric-lava.vercel.app/' target='_blank'>
+                <a href='https://lyric-lava.vercel.app/' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                     <OutArrow />
@@ -140,13 +140,13 @@ export const ProjectSection = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/swanson-sayings' target='_blank'>
+                <a href='https://github.com/conconartist/swanson-sayings' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                     <OutArrow />
                   </button>
                 </a>
-                <a href='https://swanson-says.herokuapp.com/' target='_blank'>
+                <a href='https://swanson-says.herokuapp.com/' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                     <OutArrow />
@@ -174,13 +174,13 @@ export const ProjectSection = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/rancid-tomatillos' target='_blank'>
+                <a href='https://github.com/conconartist/rancid-tomatillos' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                     <OutArrow />
                   </button>
                 </a>
-                <a href='https://rancid-tomatillos-lake.vercel.app/' target='_blank'>
+                <a href='https://rancid-tomatillos-lake.vercel.app/' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                     <OutArrow />
