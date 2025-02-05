@@ -84,12 +84,12 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/face-it'>
+                <a href='https://github.com/conconartist/face-it' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                   </button>
                 </a>
-                <a href='https://face-it-blue.vercel.app/'>
+                <a href='https://face-it-blue.vercel.app/' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                   </button>
@@ -119,12 +119,12 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/book-worm-fe'>
+                <a href='https://github.com/conconartist/book-worm-fe' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                   </button>
                 </a>
-                <a href='https://book-worm-2.herokuapp.com/home'>
+                <a href='https://book-worm-2.herokuapp.com/home' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                   </button>
@@ -150,12 +150,12 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/lyric-lava'>
+                <a href='https://github.com/conconartist/lyric-lava' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                   </button>
                 </a>
-                <a href='https://lyric-lava.vercel.app/'>
+                <a href='https://lyric-lava.vercel.app/' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                   </button>
@@ -177,12 +177,12 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/swanson-sayings'>
+                <a href='https://github.com/conconartist/swanson-sayings' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                   </button>
                 </a>
-                <a href='https://swanson-says.herokuapp.com/'>
+                <a href='https://swanson-says.herokuapp.com/' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
 \                  </button>
@@ -209,12 +209,12 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/rancid-tomatillos'>
+                <a href='https://github.com/conconartist/rancid-tomatillos' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
                   </button>
                 </a>
-                <a href='https://rancid-tomatillos-lake.vercel.app/'>
+                <a href='https://rancid-tomatillos-lake.vercel.app/' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
                   </button>
