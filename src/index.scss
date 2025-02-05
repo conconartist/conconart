@@ -15,6 +15,7 @@ body, html {
     font-size: 20px;
     padding-bottom: 8em;
     width: 100%;
+    line-height: 1.5;
   }
 
 .buttonHome {
@@ -39,9 +40,9 @@ code {
 h1{
   color: $light-background;
   text-shadow: 3px 3px 5px black;
-  font-size: 5em;
+  font-size: 2em;
   margin: 0;
-  padding: 0 20px 0 40px;
+  padding: 0 20px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -58,3 +59,39 @@ h3 {
   margin: 0.5em;
 }
 
+@media screen and (min-width:500px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  .buttonOne, .buttonTwo {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  h1 {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  main {
+    padding: 2em;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  h1 {
+    padding-left: 5%;
+  }
+}

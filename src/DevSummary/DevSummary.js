@@ -29,7 +29,7 @@ export const DevSummary = () => {
                 <p className='buttonOne'>Conconart Digital</p>
               </a> */}
               <Link to='/projects'>
-                <p className='buttonOne'>Projects</p>
+                <p className='buttonOne'>Other Projects</p>
               </Link>
             </div>
             <p>Connie Hong is an experienced developer, specializing in front end engineering and the user experience with a keen eye for design. She loves a collaborative environment but also enjoys solitary work and getting in the "zone".  She's a proud graduate from <a href='https://turing.edu/'>Turing School of Software and Design</a> with a certification in Front-End Engineering.

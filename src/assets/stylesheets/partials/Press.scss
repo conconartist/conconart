@@ -1,8 +1,7 @@
 .pressContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 2em;
-  margin-top: 2em;
+  padding: 1em;
   width: 90vw;
 }
 
@@ -14,7 +13,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  
+
   .pressContainer {
     display: flex;
     flex-direction: column;

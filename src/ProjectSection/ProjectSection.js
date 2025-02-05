@@ -1,13 +1,9 @@
 import React from 'react';
-import { DevSummary } from '../DevSummary/DevSummary';
 import { HomeButton } from '../HomeButton/HomeButton';
-import bookwormintro from '../assets/images/bookwormintro.gif';
-import lyriclavademo from '../assets/images/lyriclavademo.gif';
-import faceitdemo from '../assets/images/faceitdemo.gif';
-import swansondemo from '../assets/images/swansondemo.gif';
-import tomatillosdemo from '../assets/images/tomatillosdemo.gif';
+import innosolvedemo from '../assets/images/innosolve.gif';
+import eagleslayhairdemo from '../assets/images/eagleslayhair.gif';
+import eagleslayhairLogo from '../assets/images/eagleslayhairLogo.png';
 import BackButton from '../BackButton/BackButton';
-import OutArrow from '../OutArrow/OutArrow';
 
 export const ProjectSection = () => {
 
@@ -16,172 +12,32 @@ export const ProjectSection = () => {
           <div className='linkedSectionTitle'>
             <div className='categoryTitleContainer'>
               <BackButton previousPage={'/dev'}/>
-              <h2>Projects</h2>
+              <h2>Other Projects</h2>
             </div>
           </div>
           <section className='linkedSection'>
             <div className='projectSection'>
-              <h3 className='projectTitle'>FaceIt</h3>
-              <img className='projectDemo' src={faceitdemo} alt='FaceIt app demo'></img>
-              <p className='projectSummary'>FaceIt is a Progressive Web Application that informs and helps the concerned & conscientious consumer find curated beauty products that match their lifestyle.</p>
-              <div className='projectTechStack'>
-                <h4 className='techStackTitle'>Technologies Used:</h4>
-                <ul className='techStackList'>
-                  <li>React</li>
-                  <li>JavaScript(ES6)</li>
-                  <li>CSS</li>
-                  <li>Cypress</li>
-                  <li>Lighthouse</li>
-                  <li>Heroku</li>
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>MySQL</li>
-                </ul>
-              </div>
+              <h3 className='projectTitle'>Innosolve</h3>
+              <img className='projectDemo' src={innosolvedemo} alt='Innosolve site demo'></img>
+              <p className='projectSummary'>Innosolve.net was built with a bespoke theme on Wordpress.  A company that sells products and consultation for 3D imaging products, this site has custom CSS, designed to be responsive for mobile and tablet.  I was given the marketing materials and the client wanted to showcase their catalog on the website in a way that was concise and easy to read.</p>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/face-it' target='_blank' rel='noreferrer'>
+                <a href='https://innosolve.net' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
-                    <p>Github Repo</p>
-                    <OutArrow />
-                  </button>
-                </a>
-                <a href='https://face-it-blue.vercel.app/' target='_blank' rel='noreferrer'>
-                  <button className='buttonOutsideLink'>
-                    <p>Deployed Site</p>
-                    <OutArrow />
+                    <p>Innosolve Website</p>
                   </button>
                 </a>
               </div>
             </div>
 
             <div className='projectSection'>
-              <h3 className='projectTitle'>BookWorm</h3>
-              <img className='projectDemo' src={bookwormintro} alt='bookWorm app demo'></img>
-              <p className='projectSummary'>BookWorm is an app aimed at young readers that allows a user be able track their reading progress. The app includes features that let the user add "bookmarks", comments, and ratings of each book during the user's reading journey.</p>
-              <div className='projectTechStack'>
-                <h4 className='techStackTitle'>Technologies Used:</h4>
-                <ul className='techStackList'>
-                  <li>React with React Hooks</li>
-                  <li>JavaScript(ES6)</li>
-                  <li>JSX</li>
-                  <li>SCSS</li>
-                  <li>Cypress</li>
-                  <li>Circle CI</li>
-                  <li>Lighthouse</li>
-                  <li>Heroku</li>
-                  <li>Miro</li>
-                  <li>Figma</li>
-                  <li>D3</li>
-                  <li>GSAP (Greensock)</li>
-                </ul>
-              </div>
+              <h3 className='projectTitle'>Eagleslayhair</h3>
+              <img className='projectDemo' src={eagleslayhairdemo} alt='Eagleslayhair site demo'></img>
+              <p className='projectSummary'>Eagleslayhair.com is a portfolio website for Katie Eglsaer, a hair stylist in San Diego. I customized a template on Wix by creating a color template based around the bright colors Katie enjoys.  I had fun drawing the animation featured on the homepage, displaying Katie in the myriad of hairstyles she's sported through the years. I also created the logo for her to use on her business cards and social media.</p>
+              <img className='projectPhoto' src={eagleslayhairLogo} alt='Eagleslayhair logo with turquoise background'></img>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/book-worm-fe' target='_blank' rel='noreferrer'>
+                <a href='https://www.eagleslayhair.com' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
-                    <p>Github Repo</p>
-                    <OutArrow />
-                  </button>
-                </a>
-                <a href='https://book-worm-2.herokuapp.com/home' target='_blank' rel='noreferrer'>
-                  <button className='buttonOutsideLink'>
-                    <p>Deployed Site</p>
-                    <OutArrow />
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            <div className='projectSection'>
-              <h3 className='projectTitle'>Lyric Lava</h3>
-              <img className='projectDemo' src={lyriclavademo} alt='Lyric Lava app demo'></img>
-              <p className='projectSummary'>Lyric Lava is a songwriting app for those who are suffering from writer's block. It utilizes the Words API and generating random prompts, as well as a thesaurus and rhyming resource when the user is writing out lyrics for a song.</p>
-              <div className='projectTechStack'>
-                <h4 className='techStackTitle'>Technologies Used:</h4>
-                <ul className='techStackList'>
-                  <li>React with React Hooks</li>
-                  <li>JavaScript(ES6)</li>
-                  <li>JSX</li>
-                  <li>CSS</li>
-                  <li>Cypress</li>
-                  <li>Lighthouse</li>
-                  <li>Vercel</li>
-                 <li>Miro</li>
-                </ul>
-              </div>
-              <div className='projectLink'>
-                <a href='https://github.com/conconartist/lyric-lava' target='_blank' rel='noreferrer'>
-                  <button className='buttonOutsideLink'>
-                    <p>Github Repo</p>
-                    <OutArrow />
-                  </button>
-                </a>
-                <a href='https://lyric-lava.vercel.app/' target='_blank' rel='noreferrer'>
-                  <button className='buttonOutsideLink'>
-                    <p>Deployed Site</p>
-                    <OutArrow />
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            <div className='projectSection'>
-              <h3 className='projectTitle'>Swanson Says</h3>
-              <img className='projectDemo' src={swansondemo} alt='Swanson Sayings app demo'></img>
-              <p className='projectSummary'>Swanson Says is an app utilizing the open API of random generated quotes from the TV show "Parks and Recreation" as said by the character, Ron Swanson.</p>
-              <div className='projectTechStack'>
-                <h4 className='techStackTitle'>Technologies Used:</h4>
-                <ul className='techStackList'>
-                  <li>React</li>
-                  <li>JavaScript(ES6)</li>
-                  <li>CSS</li>
-                  <li>HTML</li>
-                </ul>
-              </div>
-              <div className='projectLink'>
-                <a href='https://github.com/conconartist/swanson-sayings' target='_blank' rel='noreferrer'>
-                  <button className='buttonOutsideLink'>
-                    <p>Github Repo</p>
-                    <OutArrow />
-                  </button>
-                </a>
-                <a href='https://swanson-says.herokuapp.com/' target='_blank' rel='noreferrer'>
-                  <button className='buttonOutsideLink'>
-                    <p>Deployed Site</p>
-                    <OutArrow />
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            <div className='projectSection'>
-              <h3 className='projectTitle'>Rancid Tomatillos</h3>
-              <img className='projectDemo' src={tomatillosdemo} alt='Rancid Tomatillos app demo'></img>
-              <p className='projectSummary'>Inspired by the popular film rating sites, Rancid Tomatillos is a single page application where users can interact with a display of several movies and view specific information based on the movies chosen. A user can search movies by title, sort movies alphabetically, or see movies in order of their average rating.</p>
-              <div className='projectTechStack'>
-                <h4 className='techStackTitle'>Technologies Used:</h4>
-                <ul className='techStackList'>
-                  <li>React with React Hooks</li>
-                  <li>JavaScript(ES6)</li>
-                  <li>SCSS</li>
-                  <li>Cypress</li>
-                  <li>Moment.js</li>
-                  <li>Lighthouse</li>
-                  <li>Vercel</li>
-                  <li>Miro</li>
-                  <li>Bootstrap</li>
-                </ul>
-              </div>
-              <div className='projectLink'>
-                <a href='https://github.com/conconartist/rancid-tomatillos' target='_blank' rel='noreferrer'>
-                  <button className='buttonOutsideLink'>
-                    <p>Github Repo</p>
-                    <OutArrow />
-                  </button>
-                </a>
-                <a href='https://rancid-tomatillos-lake.vercel.app/' target='_blank' rel='noreferrer'>
-                  <button className='buttonOutsideLink'>
-                    <p>Deployed Site</p>
-                    <OutArrow />
+                    <p>Eagleslayhair Website</p>
                   </button>
                 </a>
               </div>

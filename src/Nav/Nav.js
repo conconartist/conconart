@@ -7,22 +7,22 @@ export const Nav = () => {
     <nav>
       <li className='devLink'>
         <div className='titleContainer'>
-          <Link to='/dev'>
-            <h2 className='mainPageLink'>Developer</h2>
+          <Link to='/dev' className='mainPageLink'>
+            Developer
           </Link>
         </div>
       </li>
       <li className='musicianLink'>
         <div className='titleContainer'>
-          <Link to='/music'>
-            <h2 className='mainPageLink'>Musician</h2>
+          <Link to='/music' className='mainPageLink'>
+            Musician
           </Link>
         </div>
       </li>
       <li className='sewistLink'>
         <div className='titleContainer'>
-          <Link to='/maker'>
-            <h2 className='mainPageLink'>Maker</h2>
+          <Link to='/maker' className='mainPageLink'>
+            Maker
           </Link>
         </div>
       </li>

@@ -21,7 +21,7 @@ export const Portfolio = () => {
           <div className='projectSection'>
               <h3 className='projectTitle'>Custom Messaging Platform</h3>
               <p className='projectSummary'>Custom application that coordinates messaging between assisted living homes and agents.</p>
-              <ul>
+              <ul className='projectSummaryList'>
                 <li>Facilitated weekly meetings with client and team to discuss user stories, architecture, and sprint-planning for a newly conceptualized custom messaging platform, utilizing data on Google Firebase to create a messaging application between senior living facilities and agents</li>
                 <li>Resourced full-time for over a year, building new features, addressing bugs, and writing tests in Rspec and Capybara,  accessing endpoints from the Google Maps and Places APIs for integrating search and location UI in React, Ruby on Rails, PostgreSQL, Node.js, Redux, Lodash, Sass</li>
               </ul>
@@ -45,7 +45,7 @@ export const Portfolio = () => {
             <div className='projectSection'>
               <h3 className='projectTitle'>K-12 Instructional Support Platform</h3>
               <p className='projectSummary'>Custom application that provides detail reports for instructors, administrators, and students to aid in the classroom.  Features include detailed printouts with charts, classroom rosters, individual scoring, and customizable reports.</p>
-              <ul>
+              <ul className='projectSummaryList'>
                 <li>Refactored depricated code, addressed code debt, and built new features such as printable graphs of student progress reports from user data and building custom text fields.</li>
                 <li>Resourced for six months, addressing bugs, and coordinating deployment to production on Heroku</li>
               </ul>

@@ -6,6 +6,7 @@ header {
 
 .topHeaderRow {
   display: flex;
+  flex-direction: column;
   gap: 10%;
 }
 
@@ -15,7 +16,7 @@ header {
 
 .headingText {
   text-align: left;
-  padding-left: 50px;
+  padding-left: 20px;
 }
 
 .contactContainer {
@@ -70,10 +71,83 @@ header {
   text-align: -webkit-center;
 }
 
+@media screen and (min-width:500px) {
+ .headingText{
+  padding-right: 20px;
+ }
+}
+
 @media screen and (max-width: 650px) {
 
-    .contactContainer {
-        align-items: center;
-        flex-direction: column;
-      }
+  .contactContainer {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .socialIconContainer {
+      padding: 0 20px 20px;
+      justify-content:center;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+  .topHeaderRow {
+    flex-direction: row;
+  }
+
+  .siteTitle {
+    font-size: 3.2em;
+  }
+
+  .headingText p {
+    margin: 0.25em;
+  }
+
+  .socialIconContainer {
+    padding: 5px 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .topHeaderRow {
+    gap: 5%;
+  }
+
+  .siteTitle {
+      font-size: 3.75em;
+  }
+
+  .headingText {
+    padding-left: 30px;
+  }
+
+  .socialIconContainer {
+    padding: 5px 35px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .siteTitle {
+    font-size: 4.5em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .siteTitle {
+    font-size: 4.75em;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .siteTitle {
+    font-size: 5em;
+  }
+
+  .headingText {
+    padding-left: 6%;
+  }
+
+  .socialIconContainer {
+    padding: 1% 7%;
+  }
 }
