@@ -26,8 +26,9 @@ body, html {
 
 .buttonOutsideLink {
   @include buttonStyle();
-  background-color: $third-accent-color;
+  background-color: $fourth-accent-color;
   cursor: pointer;
+  color: #fff;
 }
 
 code {
