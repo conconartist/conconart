@@ -32,8 +32,6 @@ export const DevSummary = () => {
                 <p className='buttonOne'>Other Projects</p>
               </Link>
             </div>
-            <p>Connie Hong is an experienced developer, specializing in front end engineering and the user experience with a keen eye for design. She loves a collaborative environment but also enjoys solitary work and getting in the "zone".  She's a proud graduate from <a href='https://turing.edu/'>Turing School of Software and Design</a> with a certification in Front-End Engineering.
-            </p>
             <h3>Skills:</h3>
             <ul className='techStackList'>
               <li>JavaScript</li>
@@ -56,7 +54,10 @@ export const DevSummary = () => {
               <li>Responsive Web Design</li>
               <li>Deployment (Netlify, Vercel, Heroku, GH Pages)</li>
             </ul>
-
+            <p>Growing up in a household with one shared desktop computer on a bulky desk against a wall in the living room, coding was a unique mystery to me.  I would spend some evenings after school customizing my Angelfire website devoted to scanned drawings I made of myself playing the piano and figuring out how to upload 30 second clips of songs I recorded. When I had a Myspace profile, I would spend hours browsing user profiles, wondering how they got theirs to look the way it did.</p>
+            <p>Back then, I'm not even sure I knew what programming was but I knew it was a skill that would help me to create more.  I was limited by templates and choosing only what was in front of me.  I wanted to know how to build something from scratch.</p>
+            <p>After years of teaching and playing music, I seized my opportunity in 2020 when being forced indoors gave me time to pursue other endeavors I might not have otherwise.  Initially, I considered the path of UX design but what I really wanted to do was learn how to code and further implement the designs in a more kinesthetic way by implementation.  As I had hoped, learning Javascript was the gateway to bring ideas to life in a new format and I haven't looked back since!</p>
+            <p>I specialize in front end engineering and the user experience with a keen eye for design. I love a collaborative environment but I also enjoy solitary work and getting in the "zone". I am a proud graduate from <a href='https://turing.edu/' target='_blank' rel='noreferrer'>Turing School of Software and Design</a> with a certification in Front-End Engineering.</p>
           </div>
         </section>
       </>
