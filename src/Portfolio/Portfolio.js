@@ -14,7 +14,7 @@ export const Portfolio = () => {
         <>
           <div className='linkedSectionTitle'>
             <div className='categoryTitleContainer'>
-              <BackButton />
+              <BackButton previousPage={'/dev'}/>
               <h2>Portfolio</h2>
             </div>
           </div>

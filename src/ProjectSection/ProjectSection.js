@@ -15,7 +15,7 @@ export const ProjectSection = () => {
         <>
           <div className='linkedSectionTitle'>
             <div className='categoryTitleContainer'>
-              <BackButton />
+              <BackButton previousPage={'/dev'}/>
               <h2>Projects</h2>
             </div>
           </div>

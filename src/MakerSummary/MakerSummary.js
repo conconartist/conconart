@@ -7,7 +7,7 @@ export const MakerSummary = () => {
     <>
       <div className='linkedSectionTitle'>
           <div className='categoryTitleContainer'>
-            <BackButton />
+            <BackButton previousPage={'/'}/>
             <h2>Maker</h2>
           </div>
       </div>

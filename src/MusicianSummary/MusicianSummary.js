@@ -9,7 +9,7 @@ export const MusicianSummary = () => {
       <>
         <div className='linkedSectionTitle'>
             <div className='categoryTitleContainer'>
-              <BackButton />
+              <BackButton previousPage={'/'}/>
               <h2>Musician</h2>
             </div>
         </div>

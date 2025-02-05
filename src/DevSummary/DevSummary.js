@@ -9,7 +9,7 @@ export const DevSummary = () => {
       <>
         <div className='linkedSectionTitle'>
             <div className='categoryTitleContainer'>
-              <BackButton />
+              <BackButton previousPage={'/'}/>
               <h2>Developer</h2>
             </div>
         </div>

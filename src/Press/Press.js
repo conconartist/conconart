@@ -7,7 +7,7 @@ export const Press = () => {
         <>
           <div className='linkedSectionTitle'>
             <div className='categoryTitleContainer'>
-              <BackButton />
+              <BackButton previousPage={'/music'}/>
               <h2>Press</h2>
             </div>
           </div>

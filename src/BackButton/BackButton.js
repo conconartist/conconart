@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const BackButton = () => {
+const BackButton = ({previousPage}) => {
+
     return (
-      <Link to='/'>
+      <Link to={previousPage}>
         <svg className='backButton' viewBox="0 0 512 512">
           <g>
           <g>

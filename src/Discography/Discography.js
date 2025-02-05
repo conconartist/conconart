@@ -51,7 +51,7 @@ export const Discography = () => {
       <>
         <div className='linkedSectionTitle'>
           <div className='categoryTitleContainer'>
-            <BackButton />
+            <BackButton previousPage={'/music'} />
             <h2>Discography</h2>
           </div>
         </div>
