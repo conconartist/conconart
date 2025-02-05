@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import OutArrow from '../OutArrow/OutArrow';
 import BackButton from '../BackButton/BackButton';
 
 export const MusicianSummary = () => {
@@ -26,13 +25,13 @@ export const MusicianSummary = () => {
                 <p className='buttonOne'>Press</p>
               </Link>
               <a href='https://www.ivorycircle.com/' target='_blank' rel='noreferrer'>
-                <p className='buttonTwo'>Ivory Circle <OutArrow /></p>
+                <p className='buttonTwo'>Ivory Circle</p>
               </a>
               <a href='https://www.fairelle.me/' target='_blank' rel='noreferrer'>
-                <p className='buttonTwo'>Fair Elle <OutArrow /></p>
+                <p className='buttonTwo'>Fair Elle</p>
               </a>
               <a href='https://conconartstudio.com' target='_blank' rel='noreferrer'>
-                <p className='buttonTwo'>Conconart Studio <OutArrow /></p>
+                <p className='buttonTwo'>Conconart Studio</p>
               </a>
             </div>
             <p>As a songwriter, Connie has been co-writer for the band Ivory Circle since 2013, which has garnered local and national recognition with placements on Netflix, CW (Charmed), VH1 (Couples Therapy) and Showtime (The Affair promotional spot), radio airplay (including OpenAir CPR, KBCO and KTCL in the Denver-metro area), and press in several publications for her dynamic vocal abilities and heartfelt songs.</p>

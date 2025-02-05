@@ -6,7 +6,6 @@ import faceitdemo from '../assets/images/faceitdemo.gif';
 import swansondemo from '../assets/images/swansondemo.gif';
 import tomatillosdemo from '../assets/images/tomatillosdemo.gif';
 import BackButton from '../BackButton/BackButton';
-import OutArrow from '../OutArrow/OutArrow';
 
 export const Portfolio = () => {
 
@@ -19,6 +18,53 @@ export const Portfolio = () => {
             </div>
           </div>
           <section className='linkedSection'>
+          <div className='projectSection'>
+              <h3 className='projectTitle'>Custom Messaging Platform</h3>
+              <p className='projectSummary'>Custom application that coordinates messaging between assisted living homes and agents.</p>
+              <ul>
+                <li>Facilitated weekly meetings with client and team to discuss user stories, architecture, and sprint-planning for a newly conceptualized custom messaging platform, utilizing data on Google Firebase to create a messaging application between senior living facilities and agents</li>
+                <li>Resourced full-time for over a year, building new features, addressing bugs, and writing tests in Rspec and Capybara,  accessing endpoints from the Google Maps and Places APIs for integrating search and location UI in React, Ruby on Rails, PostgreSQL, Node.js, Redux, Lodash, Sass</li>
+              </ul>
+              <div className='projectTechStack'>
+                <h4 className='techStackTitle'>Technologies Used:</h4>
+                <ul className='techStackList'>
+                  <li>React</li>
+                  <li>Ruby on Rails</li>
+                  <li>PostgreSQL</li>
+                  <li>Node.js</li>
+                  <li>Redux</li>
+                  <li>Lodash</li>
+                  <li>SCSS</li>
+                  <li>Rspec/ Capybara</li>
+                  <li>ElasticSearch</li>
+                  <li>Google Firebase</li>
+                  <li>Heroku</li>
+                </ul>
+              </div>
+            </div>
+            <div className='projectSection'>
+              <h3 className='projectTitle'>K-12 Instructional Support Platform</h3>
+              <p className='projectSummary'>Custom application that provides detail reports for instructors, administrators, and students to aid in the classroom.  Features include detailed printouts with charts, classroom rosters, individual scoring, and customizable reports.</p>
+              <ul>
+                <li>Refactored depricated code, addressed code debt, and built new features such as printable graphs of student progress reports from user data and building custom text fields.</li>
+                <li>Resourced for six months, addressing bugs, and coordinating deployment to production on Heroku</li>
+              </ul>
+              <div className='projectTechStack'>
+                <h4 className='techStackTitle'>Technologies Used:</h4>
+                <ul className='techStackList'>
+                  <li>Vue</li>
+                  <li>Ruby on Rails</li>
+                  <li>Rspec</li>
+                  <li>Capybara</li>
+                  <li>Sidekiq</li>
+                  <li>Webpacker</li>
+                  <li>Lodash</li>
+                  <li>SCSS</li>
+                  <li>Rspec/ Capybara</li>
+                  <li>Heroku</li>
+                </ul>
+              </div>
+            </div>
             <div className='projectSection'>
               <h3 className='projectTitle'>FaceIt</h3>
               <img className='projectDemo' src={faceitdemo} alt='FaceIt app demo'></img>
@@ -41,13 +87,11 @@ export const Portfolio = () => {
                 <a href='https://github.com/conconartist/face-it'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
-                    <OutArrow />
                   </button>
                 </a>
                 <a href='https://face-it-blue.vercel.app/'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
-                    <OutArrow />
                   </button>
                 </a>
               </div>
@@ -78,13 +122,11 @@ export const Portfolio = () => {
                 <a href='https://github.com/conconartist/book-worm-fe'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
-                    <OutArrow />
                   </button>
                 </a>
                 <a href='https://book-worm-2.herokuapp.com/home'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
-                    <OutArrow />
                   </button>
                 </a>
               </div>
@@ -111,13 +153,11 @@ export const Portfolio = () => {
                 <a href='https://github.com/conconartist/lyric-lava'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
-                    <OutArrow />
                   </button>
                 </a>
                 <a href='https://lyric-lava.vercel.app/'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
-                    <OutArrow />
                   </button>
                 </a>
               </div>
@@ -140,14 +180,12 @@ export const Portfolio = () => {
                 <a href='https://github.com/conconartist/swanson-sayings'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
-                    <OutArrow />
                   </button>
                 </a>
                 <a href='https://swanson-says.herokuapp.com/'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
-                    <OutArrow />
-                  </button>
+\                  </button>
                 </a>
               </div>
             </div>
@@ -174,13 +212,11 @@ export const Portfolio = () => {
                 <a href='https://github.com/conconartist/rancid-tomatillos'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
-                    <OutArrow />
                   </button>
                 </a>
                 <a href='https://rancid-tomatillos-lake.vercel.app/'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
-                    <OutArrow />
                   </button>
                 </a>
               </div>
