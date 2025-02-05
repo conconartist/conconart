@@ -1,13 +1,11 @@
 import React from 'react';
-import { DevSummary } from '../DevSummary/DevSummary';
 import { HomeButton } from '../HomeButton/HomeButton';
-import bookwormintro from '../assets/bookwormintro.gif';
-import lyriclavademo from '../assets/lyriclavademo.gif';
-import faceitdemo from '../assets/faceitdemo.gif';
-import swansondemo from '../assets/swansondemo.gif';
-import tomatillosdemo from '../assets/tomatillosdemo.gif';
+import bookwormintro from '../assets/images/bookwormintro.gif';
+import lyriclavademo from '../assets/images/lyriclavademo.gif';
+import faceitdemo from '../assets/images/faceitdemo.gif';
+import swansondemo from '../assets/images/swansondemo.gif';
+import tomatillosdemo from '../assets/images/tomatillosdemo.gif';
 import BackButton from '../BackButton/BackButton';
-import OutArrow from '../OutArrow/OutArrow';
 
 export const Portfolio = () => {
 
@@ -15,13 +13,58 @@ export const Portfolio = () => {
         <>
           <div className='linkedSectionTitle'>
             <div className='categoryTitleContainer'>
-              <BackButton />
+              <BackButton previousPage={'/dev'}/>
               <h2>Portfolio</h2>
             </div>
           </div>
-          <DevSummary />
           <section className='linkedSection'>
-
+          <div className='projectSection'>
+              <h3 className='projectTitle'>Custom Messaging Platform</h3>
+              <p className='projectSummary'>Custom application that coordinates messaging between assisted living homes and agents.</p>
+              <ul className='projectSummaryList'>
+                <li>Facilitated weekly meetings with client and team to discuss user stories, architecture, and sprint-planning for a newly conceptualized custom messaging platform, utilizing data on Google Firebase to create a messaging application between senior living facilities and agents</li>
+                <li>Resourced full-time for over a year, building new features, addressing bugs, and writing tests in Rspec and Capybara,  accessing endpoints from the Google Maps and Places APIs for integrating search and location UI in React, Ruby on Rails, PostgreSQL, Node.js, Redux, Lodash, Sass</li>
+              </ul>
+              <div className='projectTechStack'>
+                <h4 className='techStackTitle'>Technologies Used:</h4>
+                <ul className='techStackList'>
+                  <li>React</li>
+                  <li>Ruby on Rails</li>
+                  <li>PostgreSQL</li>
+                  <li>Node.js</li>
+                  <li>Redux</li>
+                  <li>Lodash</li>
+                  <li>SCSS</li>
+                  <li>Rspec/ Capybara</li>
+                  <li>ElasticSearch</li>
+                  <li>Google Firebase</li>
+                  <li>Heroku</li>
+                </ul>
+              </div>
+            </div>
+            <div className='projectSection'>
+              <h3 className='projectTitle'>K-12 Instructional Support Platform</h3>
+              <p className='projectSummary'>Custom application that provides detail reports for instructors, administrators, and students to aid in the classroom.  Features include detailed printouts with charts, classroom rosters, individual scoring, and customizable reports.</p>
+              <ul className='projectSummaryList'>
+                <li>Refactored depricated code, addressed code debt, and built new features such as printable graphs of student progress reports from user data and building custom text fields.</li>
+                <li>Resourced for six months, addressing bugs, and coordinating deployment to production on Heroku</li>
+              </ul>
+              <div className='projectTechStack'>
+                <h4 className='techStackTitle'>Technologies Used:</h4>
+                <ul className='techStackList'>
+                  <li>Vue</li>
+                  <li>Ruby on Rails</li>
+                  <li>Rspec</li>
+                  <li>Capybara</li>
+                  <li>Sidekiq</li>
+                  <li>Webpacker</li>
+                  <li>Lodash</li>
+                  <li>SCSS</li>
+                  <li>Rspec/ Capybara</li>
+                  <li>Heroku</li>
+                </ul>
+              </div>
+            </div>
             <div className='projectSection'>
               <h3 className='projectTitle'>FaceIt</h3>
               <img className='projectDemo' src={faceitdemo} alt='FaceIt app demo'></img>
@@ -41,16 +84,14 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/face-it'>
+                <a href='https://github.com/conconartist/face-it' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
-                    <OutArrow />
                   </button>
                 </a>
-                <a href='https://face-it-blue.vercel.app/'>
+                <a href='https://face-it-blue.vercel.app/' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
-                    <OutArrow />
                   </button>
                 </a>
               </div>
@@ -78,16 +119,14 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/book-worm-fe'>
+                <a href='https://github.com/conconartist/book-worm-fe' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
-                    <p>Github Repo</p> 
-                    <OutArrow />
+                    <p>Github Repo</p>
                   </button>
                 </a>
-                <a href='https://book-worm-2.herokuapp.com/home'>
+                <a href='https://book-worm-2.herokuapp.com/home' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
-                    <OutArrow />
                   </button>
                 </a>
               </div>
@@ -111,16 +150,14 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/lyric-lava'>
+                <a href='https://github.com/conconartist/lyric-lava' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
-                    <OutArrow />
                   </button>
                 </a>
-                <a href='https://lyric-lava.vercel.app/'>
+                <a href='https://lyric-lava.vercel.app/' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
-                    <OutArrow />
                   </button>
                 </a>
               </div>
@@ -140,17 +177,15 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/swanson-sayings'>
+                <a href='https://github.com/conconartist/swanson-sayings' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
-                    <OutArrow />
                   </button>
                 </a>
-                <a href='https://swanson-says.herokuapp.com/'>
+                <a href='https://swanson-says.herokuapp.com/' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
-                    <OutArrow />
-                  </button>
+\                  </button>
                 </a>
               </div>
             </div>
@@ -174,16 +209,14 @@ export const Portfolio = () => {
                 </ul>
               </div>
               <div className='projectLink'>
-                <a href='https://github.com/conconartist/rancid-tomatillos'>
+                <a href='https://github.com/conconartist/rancid-tomatillos' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Github Repo</p>
-                    <OutArrow />
                   </button>
                 </a>
-                <a href='https://rancid-tomatillos-lake.vercel.app/'>
+                <a href='https://rancid-tomatillos-lake.vercel.app/' target='_blank' rel='noreferrer'>
                   <button className='buttonOutsideLink'>
                     <p>Deployed Site</p>
-                    <OutArrow />
                   </button>
                 </a>
               </div>
@@ -192,5 +225,4 @@ export const Portfolio = () => {
           <HomeButton />
         </>
     )
-
 }

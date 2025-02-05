@@ -1,47 +1,35 @@
-@import './style/App';
-@import './style/variables';
-@import './style/reset';
-@import './style/extends';
-@import './Headshot/Headshot.scss';
-@import './Discography/Discography.scss';
-@import './Licensing/Licensing.scss';
-@import './Portfolio/Portfolio.scss';
-@import './DevSummary/DevSummary.scss';
-@import './Press/Press.scss';
-@import './Twitter/Twitter.scss';
-@import './Instagram/Instagram.scss';
-@import './Github/Github.scss';
-@import './Email/Email.scss';
-@import './Footer/Footer.scss';
-@import './Arrow/Arrow.scss';
-@import './MusicianSummary/MusicianSummary.scss';
-@import './BackButton/BackButton.scss';
-@import './OutArrow/OutArrow.scss';
+@import './assets/stylesheets/App';
+@import './assets/stylesheets/variables';
+@import './assets/stylesheets/reset';
+@import './assets/stylesheets/extends';
+@import './assets/stylesheets/application.scss';
 
 body, html {
     background-color: $primary-background-color;
-    background-image: url("./background.PNG");
+    background-image: url(./colorStreak.PNG);
     color: $main-text-color;
     display: flex;
     flex-direction: column;
     margin: 0;
-    font-family: 'Roboto Condensed', Sans-Serif;
-    font-size: 35px;
     font-family: 'Cabin', Sans-Serif;
-    font-size: 18px;
+    font-size: 20px;
     padding-bottom: 8em;
+    width: 100%;
+    line-height: 1.5;
   }
 
 .buttonHome {
   @include buttonStyle();
-  background-color: $fifth-accent-color;
+  background-color: $light-background;
+  border: solid 1px #000;
   cursor: pointer;
 }
 
 .buttonOutsideLink {
   @include buttonStyle();
-  background-color: $sixth-accent-color;
+  background-color: $fourth-accent-color;
   cursor: pointer;
+  color: #fff;
 }
 
 code {
@@ -50,17 +38,16 @@ code {
 }
 
 h1{
-  color: $light-accent-color;
-  text-shadow: 1px 1px 2px black;
-  font-size: 7em;
+  color: $light-background;
+  text-shadow: 3px 3px 5px black;
+  font-size: 2em;
   margin: 0;
-  margin-bottom: 0.2em;
-  padding: 0.3em;
+  padding: 0 20px;
   text-align: center;
-  width: 50%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  border-bottom: solid 5px #000;
 }
 
 h2 {
@@ -69,6 +56,42 @@ h2 {
 }
 
 h3 {
-  margin: 0.1em;
+  margin: 0.5em;
 }
 
+@media screen and (min-width:500px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  .buttonOne, .buttonTwo {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  h1 {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    padding-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  main {
+    padding: 2em;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  h1 {
+    padding-left: 5%;
+  }
+}

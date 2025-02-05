@@ -1,0 +1,221 @@
+@import './variables';
+@import './extends';
+
+a {
+  text-decoration: none;
+  color: $dark-fifth-accent;
+  font-weight:500;
+  &:visited {
+    color: $dark-fifth-accent;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+ul {
+  padding: 0;
+}
+
+.aboutMe {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+button {
+  border: none;
+}
+
+.buttonContainerFlex {
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+
+.buttonContainerFlex a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonContainerGrid{
+  display: grid;
+  grid-template-columns: 1fr;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.buttonOne, .buttonTwo {
+  padding: 0.3em 1em;
+}
+
+.buttonOne {
+  align-items: center;
+  background-color: $sixth-accent-color;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 25px;
+  color: #000;
+  display: flex;
+  font-size: 1.2em;
+  height: 3vh;
+  justify-content: center;
+  margin: 0.3em;
+  padding: 0.3em;
+  max-width:400px;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.buttonTwo {
+  align-items: center;
+  background-color: $third-accent-color;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 25px;
+  color: #000;
+  display: flex;
+  font-size: 1.2em;
+  height: 3vh;
+  justify-content: center;
+  margin: 0.3em;
+  padding: 0.3em;
+  max-width: 400px;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.categoryTitleContainer {
+  align-items: center;
+  display: flex;
+  height: 2.5em;
+  justify-content: center;
+  margin-right: 1.5em;
+  width: 100vw;
+  &:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.displaySummary {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.linkSection {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  width: 90%;
+}
+
+.mainPageLink {
+  @include mainLink();
+}
+
+.realHeadshotImg {
+  height: 300px;
+}
+
+.summary, .summaryContainer {
+  align-items: center;
+  background-color: $transparent-background;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 1em;
+  box-shadow: 5px 5px 10px black;
+}
+
+.summaryHeader {
+  padding: 0.5em;
+}
+
+
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 1em;
+  }
+
+  .buttonOne, .buttonTwo {
+    font-size: 12px;
+  }
+
+
+}
+
+@media screen and (min-width: 600px) {
+  .linkSection {
+    padding: 2em;
+  }
+
+  .summaryContainer {
+    padding: 1em 1em 2em;
+  }
+
+  .buttonContainerGrid a {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .buttonContainerGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .summaryContainer {
+    padding: 1em 2em 2em;
+  }
+
+  .aboutMe {
+    padding: 2em;
+  }
+
+  .aboutMe .summary {
+    padding: 2em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .aboutMe {
+      padding: 2em 8em;
+  }
+
+  .summaryContainer {
+    padding: 2em 2em 3em;
+    gap: 20px;
+  }
+
+}
+
+@media screen and (min-width: 1600px) {
+  .summaryContainer {
+    max-width: 1300px;
+  }
+
+}

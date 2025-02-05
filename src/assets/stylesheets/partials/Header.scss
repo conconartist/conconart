@@ -1,0 +1,153 @@
+header {
+  display: flex;
+  flex-direction: column;
+  background: rgba($primary-background-color, 0.6);
+}
+
+.topHeaderRow {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.siteTitle a{
+  color: $light-background;
+}
+
+.headingText {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  width: 40vw;
+}
+
+.iconContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ghTitle {
+  @include iconText();
+  color: $first-accent-color;
+}
+
+.twitterTitle {
+  @include iconText();
+  color: $dark-first-accent;
+}
+
+.instaTitle {
+  @include iconText();
+  color: $third-accent-color;
+}
+
+.emailTitle {
+  @include iconText();
+  color: $dark-fourth-accent;
+  margin-top: 0.2em;
+}
+
+.socialMediaContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 20vw;
+}
+
+.socialIconContainer {
+  display: flex;
+  gap: 1em;
+  padding: 20px 50px;
+}
+
+.summaryText {
+  text-align: -webkit-center;
+}
+
+@media screen and (min-width:500px) {
+ .headingText{
+  padding-right: 20px;
+ }
+}
+
+@media screen and (max-width: 650px) {
+
+  .contactContainer {
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .socialIconContainer {
+      padding: 0 20px 20px;
+      justify-content:center;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+  .topHeaderRow {
+    flex-direction: row;
+  }
+
+  .siteTitle {
+    font-size: 3.2em;
+  }
+
+  .headingText p {
+    margin: 0.25em;
+  }
+
+  .socialIconContainer {
+    padding: 5px 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .topHeaderRow {
+    gap: 5%;
+  }
+
+  .siteTitle {
+      font-size: 3.75em;
+  }
+
+  .headingText {
+    padding-left: 30px;
+  }
+
+  .socialIconContainer {
+    padding: 5px 35px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .siteTitle {
+    font-size: 4.5em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .siteTitle {
+    font-size: 4.75em;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .siteTitle {
+    font-size: 5em;
+  }
+
+  .headingText {
+    padding-left: 6%;
+  }
+
+  .socialIconContainer {
+    padding: 1% 7%;
+  }
+}

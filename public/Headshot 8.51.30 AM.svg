@@ -15,5 +15,5 @@
 <ellipse cx="1337.5" cy="711.5" rx="25.5" ry="22.5" fill="#593B2D"/>
 <path d="M1101.04 738.502L1039 706L1003 701L954 723L915 733L976 706L1031 694L1069 714L1101.04 738.502Z" fill="#057196"/>
 <path d="M1308 702.51L1279.9 733.51L1312 707L1345 690L1377 690L1433 707L1403 682L1377 682L1345 682L1308 702.51Z" fill="#057196"/>
-<path d="M1424 710C1428.34 708.307 1430.36 705.821 1434 704" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1424 710C1428.34 708.307 1430.36 705.821 1434 704" stroke="black" strokeLinecap="round" strokeLinejoin="round"/>
 </svg>

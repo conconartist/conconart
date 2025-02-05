@@ -1,0 +1,119 @@
+@import '../variables';
+
+nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding:0 4% 0 1%;
+  gap:1em;
+}
+
+nav li:first-child{
+  background-color: $transparent-background;
+  &:hover {
+    background-color: $first-accent-color;
+  }
+}
+nav li:nth-child(2) {
+  background-color: $transparent-background;
+  &:hover {
+    background-color: $second-accent-color;
+  }
+}
+nav li:nth-child(3) {
+  background-color: $transparent-background;
+  &:hover {
+    background-color: $fourth-accent-color;
+  }
+}
+nav li:nth-child(4) {
+  background-color: $transparent-background;
+  &:hover {
+    background-color: $fourth-accent-color;
+  }
+}
+
+nav li{
+  border-radius:50%;
+  box-shadow: 5px 5px 10px black;
+  &:hover {
+    background-color: $main-text-color;
+  }
+  &:active {
+    background-color: $light-background;
+  }
+}
+
+.mainPageLink {
+  font-size: 16px;
+}
+
+nav a, nav a:visited {color: $dark-second-accent;}
+
+.titleContainer {
+  align-items: center;
+  display: flex;
+  height: 45px;
+  width: 45px;
+  justify-content: center;
+  padding: 1em;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+    color: $light-background;
+  }
+  &:active {
+    color: $main-text-color;
+  }
+}
+
+@media screen and (min-width: 500px) {
+
+  .titleContainer {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media screen and (min-width: 575px) {
+
+  .titleContainer {
+    height: 100px;
+    width: 100px;
+  }
+
+  .mainPageLink {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .mainPageLink {
+    font-size: 24px;
+  }
+
+  .titleContainer {
+    height: 110px;
+    width: 110px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .titleContainer {
+    height: 125px;
+    width: 125px;
+  }
+
+  .mainPageLink {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .titleContainer {
+      height: 140px;
+      width: 140px;
+  }
+}

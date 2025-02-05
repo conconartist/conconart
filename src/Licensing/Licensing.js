@@ -7,12 +7,12 @@ export const Licensing = () => {
         <>
           <div className='linkedSectionTitle'>
             <div className='categoryTitleContainer'>
-              <BackButton />
+              <BackButton previousPage={'/music'}/>
               <h2>As Heard On</h2>
             </div>
           </div>
             <p>"Never Let Me Go" by Ivory Circle, as heard on Netflix's Love is Blind (Season 2).</p>
-            
+
             <p>“Fading Out” by Ivory Circle, as heard on CW Network’s Charmed.</p>
 
             <p>“Beat the Drum” by Ivory Circle, as heard on the feature film Flatball.</p>
